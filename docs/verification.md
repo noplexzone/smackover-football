@@ -1,10 +1,17 @@
-# Compact formation and supplied-media acceptance
+# Jersey illustrations and active-card acceptance
 
-- Source revisionf717933 passed GitHub Actions34733984606:7unit/data/resource tests,7Chromium browser tests, formatter, Impeccabledetector and actual nginx image smoke. Smoke compares both pages and all changedmedia/JS/CSS againstdist; retired routes404.
-- Independent review of f78fb62..f717933 found no material issue. Programmatic comparison confirms42profiles/855statcells and all pre-existingdata unchanged; only10game schedule added (2final,8scheduled withnullscores).
-- Exact offense rows: OT OG C OG OT TE / WR HB QB FB WR. Exact defense rows: S OLB ILB ILB OLB S / CB DE DT DE CB. Displayaliases preserve rawprofilepositions; repeatedslots splitpools ratherthan duplicate them or inventdepthranking.
-- Initial browser pass caught CSSgrid min-content horizontaloverflow and a desktopboard45px belowviewport. Corrected implicitgridtrack to minmax(0,1fr) and used64pxfrontcards plus24px exposedstrips. Confirmation: desktop1366x768 fieldbottom753.3125offense /729.3125defense; phone390x844 bottom744.75/720.75. Documentwidthneverexceedsconfiguredviewport. All exposedplayerstrips hit-test reachable inallthreeunits.
-- CI tests exercise touchscreenwithhasTouch+isMobile and everybackupstrip, verifying exactplayeridentity ineachdialog; keyboardEnter/Escape/focusrestore; hoverable/dismissible boundedpreview; no-JSfull42profiledirectory; complete10schedule withoutfakefuturescores.
-- Desktop/mobilehome androster screenshots inspected inonebatchedpass plusoneconfirmation. Fullschedule anduniformcrops readable. Small suppliedfield/homeuniform source resolutions are documented, not fabricatedupscales.
-- Actualdistrictlogo originalbytes preserved. All suppliedimages converted tostrictgrayscale, verified by channel equality. Imagehash/source/cropcoordinates recorded indocs/content.md.
-- Livepreview was NOT changed during thisrevision; currentcontainer remainsrevisionf78fb62 pendingfreshreplacementapproval. Priorrollbackcontainer is untouched.
+## Verified locally
+
+- Built two pages; all 42 roster profiles and source statistics remain unchanged (`src/data.json` has no diff).
+- Eight unit/data/resource tests and nine Playwright browser tests passed. Formatter and Impeccable detector passed.
+- The first card is fully exposed by default. Hovering or keyboard-focusing another card expands that card to 64px; other cards become 24px strips. Total stack height remains unchanged. Leaving the stack restores its first card unless a card retains keyboard focus.
+- Desktop 1366×768 and phone 390×844 screenshots show both formation rows without horizontal overflow. Offense field bottoms measured 753.3125px and 744.75px respectively.
+- A separate real-mouse CDP sweep exercised every card in offense, defense, and special teams at both viewport widths without dismissing the preview between cards. Every card became active and every sibling strip remained hit-test reachable while the preview was visible.
+- Browser tests cover native dialog Escape/focus restoration, real touch taps on every backup strip, no-JavaScript access to all 42 profiles, complete schedule, and bounded hover previews.
+- Homepage uses newly illustrated white/away and black/home jerseys, not the supplied promotional photo crops. Each roster card uses its own numbered black jersey illustration. The original field photograph and district logo remain.
+- Away lettering uses embedded Allura script font with its license included in generated assets, avoiding platform-dependent cursive fallback. Desktop/mobile visual inspection confirmed the script, both jersey silhouettes, and numbered cards render without clipping.
+- The illustrations are reference-based interpretations, not exact replica claims. Uncertain brand marks were omitted. No player data, depth rankings, or individual portraits were invented.
+
+## Publication and deployment
+
+CI independently runs formatter, build, unit tests, Impeccable, Playwright, and actual nginx image smoke before publishing `develop` and the immutable commit image. Verify the final run and registry revision before handing off. Publishing this revision does not itself replace the existing LAN preview; container replacement requires Caleb's explicit approval.
