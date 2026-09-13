@@ -117,3 +117,26 @@ test("no JavaScript retains full roster and statistics", async ({
   ).toBe(true);
   await context.close();
 });
+
+test("compact previews remain hoverable outside their buttons", async ({
+  page,
+}) => {
+  await page.goto("/roster.html");
+  const option = page.locator('[data-position="QB"] .roster-option');
+  await option.scrollIntoViewIfNeeded();
+  await option.hover();
+  const preview = option.locator(".hover-detail");
+  await expect(preview).toHaveCSS("opacity", "1");
+  const cardBox = await option.boundingBox();
+  const box = await preview.boundingBox();
+  expect(box.y).toBeLessThan(cardBox.y);
+  await page.mouse.move(
+    box.x + box.width / 2,
+    Math.max(box.y + 4, cardBox.y - 4),
+  );
+  await expect(preview).toHaveCSS("opacity", "1");
+  await expect(preview).toHaveCSS("pointer-events", "auto");
+  await page.keyboard.press("Escape");
+  await expect(preview).toHaveCSS("opacity", "0");
+  await expect(preview).toHaveCSS("pointer-events", "none");
+});

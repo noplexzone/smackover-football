@@ -1234,11 +1234,15 @@ dialog a {
   outline-color: #fff;
 }
 .roster-option:hover .hover-detail,
-.roster-option:focus-visible .hover-detail {
+.roster-option:focus-visible .hover-detail,
+.player-card:hover .hover-detail,
+.player-card:focus-visible .hover-detail {
   opacity: 1;
+  pointer-events: auto;
 }
 .preview-dismissed .hover-detail {
   opacity: 0 !important;
+  pointer-events: none !important;
 }
 .complete-roster {
   border-block: 1px solid #bbb;
