@@ -1,12 +1,10 @@
-# Current-season revision verification
+# Compact formation and supplied-media acceptance
 
-- Exactly two built pages: Home and Roster. Retired Schedule, Program, Game Day and Community routes removed and tested404 in the actual nginx image.
-- Five local unit/resource/data/palette tests pass. Red phase failed against the former six-page historical build before implementation.
-- Seven Chromium browser tests pass in GitHub Actions run34732495179 for source commitf1ada478d4e2b4c00c4e60b76a78ae4cd1b7ec73. Includes actual `hasTouch: true` tap without click fallback, keyboard dialog/focus/Escape, hoverable expanded previews, no-JS42-player directory, results and retired routes, and390/1440px layouts.
-- Impeccable detector and Prettier pass. CSS/SVG color test checks neutral grayscale palette.
-- Live browser confirms42 current MaxPreps roster rows, current stats update date, and2completed games. All855 player-stat cells independently compared with original raw acquisition values after verified identity crosswalk; missing values stay unreported.
-- Desktop/mobile screenshots inspected. Removed nested scrolling from position options after visual review found partly clipped final rows. Confirmation screenshot and DOM scrollHeight/clientHeight show all options exposed.
-- Independent scoped review found one material issue: expanded compact previews were not hoverable. Corrected visible overlay pointer events and Escape dismissal; dedicated browser regression passes. No other material finding reported.
-- MaxPreps currently reports latest Sep3 Junction City55–12; prior Aug28 McGehee38–6. Snapshot source dates shown, not a live scoreboard.
-- Current player photos remain unavailable. Illustrations are explicitly labeled, not photos. No confirmed starter/backup depth order is asserted.
-- Local live container remains on the first draft. Replacement request has no verified approval yet; no running container changed by this revision.
+- Source revisionf717933 passed GitHub Actions34733984606:7unit/data/resource tests,7Chromium browser tests, formatter, Impeccabledetector and actual nginx image smoke. Smoke compares both pages and all changedmedia/JS/CSS againstdist; retired routes404.
+- Independent review of f78fb62..f717933 found no material issue. Programmatic comparison confirms42profiles/855statcells and all pre-existingdata unchanged; only10game schedule added (2final,8scheduled withnullscores).
+- Exact offense rows: OT OG C OG OT TE / WR HB QB FB WR. Exact defense rows: S OLB ILB ILB OLB S / CB DE DT DE CB. Displayaliases preserve rawprofilepositions; repeatedslots splitpools ratherthan duplicate them or inventdepthranking.
+- Initial browser pass caught CSSgrid min-content horizontaloverflow and a desktopboard45px belowviewport. Corrected implicitgridtrack to minmax(0,1fr) and used64pxfrontcards plus24px exposedstrips. Confirmation: desktop1366x768 fieldbottom753.3125offense /729.3125defense; phone390x844 bottom744.75/720.75. Documentwidthneverexceedsconfiguredviewport. All exposedplayerstrips hit-test reachable inallthreeunits.
+- CI tests exercise touchscreenwithhasTouch+isMobile and everybackupstrip, verifying exactplayeridentity ineachdialog; keyboardEnter/Escape/focusrestore; hoverable/dismissible boundedpreview; no-JSfull42profiledirectory; complete10schedule withoutfakefuturescores.
+- Desktop/mobilehome androster screenshots inspected inonebatchedpass plusoneconfirmation. Fullschedule anduniformcrops readable. Small suppliedfield/homeuniform source resolutions are documented, not fabricatedupscales.
+- Actualdistrictlogo originalbytes preserved. All suppliedimages converted tostrictgrayscale, verified by channel equality. Imagehash/source/cropcoordinates recorded indocs/content.md.
+- Livepreview was NOT changed during thisrevision; currentcontainer remainsrevisionf78fb62 pendingfreshreplacementapproval. Priorrollbackcontainer is untouched.
