@@ -1,0 +1,157 @@
+{
+  "players": [
+    {
+      "id": "polk",
+      "name": "Mitchell Polk",
+      "number": "2",
+      "positions": ["QB"],
+      "class": "2026",
+      "height": "6\u20322\u2033",
+      "weight": "190 lb",
+      "groups": ["offense"]
+    },
+    {
+      "id": "brown",
+      "name": "Joseph Brown",
+      "number": "3",
+      "positions": ["RB", "SB"],
+      "class": "2026",
+      "height": "6\u20320\u2033",
+      "weight": "200 lb",
+      "groups": ["offense"]
+    },
+    {
+      "id": "bryant",
+      "name": "Jaden Bryant",
+      "number": "7",
+      "positions": ["QB", "WR"],
+      "class": "2026",
+      "height": "6\u20323\u2033",
+      "weight": "185 lb",
+      "groups": ["offense"]
+    },
+    {
+      "id": "king",
+      "name": "Jeremiah King",
+      "number": "2",
+      "positions": ["WR", "CB"],
+      "class": "2026",
+      "height": "5\u20328\u2033",
+      "weight": "121 lb",
+      "groups": ["offense", "defense"]
+    },
+    {
+      "id": "robinson",
+      "name": "Jamari Robinson",
+      "number": "11",
+      "positions": ["WR", "CB"],
+      "class": "2026",
+      "groups": ["offense", "defense"]
+    },
+    {
+      "id": "zapata",
+      "name": "Samuel Zapata",
+      "number": "21",
+      "positions": ["MLB", "P"],
+      "class": "2026",
+      "groups": ["defense", "special"]
+    },
+    {
+      "id": "micah",
+      "name": "Micah Mcelroy",
+      "number": "22",
+      "positions": ["FS", "WR"],
+      "class": "2027",
+      "height": "5\u20329\u2033",
+      "weight": "155 lb",
+      "groups": ["offense", "defense"]
+    },
+    {
+      "id": "cardin",
+      "name": "Robert Cardin",
+      "number": "23",
+      "positions": ["MLB", "TE"],
+      "height": "5\u203211\u2033",
+      "weight": "215 lb",
+      "groups": ["offense", "defense"]
+    },
+    {
+      "id": "hicks",
+      "name": "Kasey Hicks",
+      "number": "25",
+      "positions": ["CB"],
+      "class": "2028",
+      "height": "5\u20329\u2033",
+      "weight": "135 lb",
+      "groups": ["defense"]
+    },
+    {
+      "id": "walker",
+      "name": "Thomas Walker",
+      "number": "30",
+      "positions": ["MLB"],
+      "class": "2028",
+      "groups": ["defense"]
+    },
+    {
+      "id": "lewis",
+      "name": "Jackson Lewis",
+      "number": "35",
+      "positions": ["G", "NG"],
+      "class": "2027",
+      "groups": ["offense", "defense"]
+    },
+    {
+      "id": "kinder",
+      "name": "Nick Kinder",
+      "number": "53",
+      "positions": ["DT"],
+      "class": "2026",
+      "groups": ["defense"]
+    },
+    {
+      "id": "johnson",
+      "name": "Kyland Johnson",
+      "number": "54",
+      "positions": ["T", "DT"],
+      "class": "2028",
+      "height": "6\u20320\u2033",
+      "weight": "235 lb",
+      "groups": ["offense", "defense"]
+    },
+    {
+      "id": "bennett",
+      "name": "Aiden bennett",
+      "number": "56",
+      "positions": ["NG", "C"],
+      "class": "2026",
+      "groups": ["offense", "defense"]
+    },
+    {
+      "id": "sharp",
+      "name": "Tucker Sharp",
+      "number": "60",
+      "positions": ["G"],
+      "class": "2027",
+      "height": "5\u20327\u2033",
+      "weight": "181 lb",
+      "groups": ["offense"]
+    },
+    {
+      "id": "white",
+      "name": "Colton White",
+      "number": "65",
+      "positions": ["DT"],
+      "class": "2027",
+      "groups": ["defense"]
+    },
+    {
+      "id": "abeyta",
+      "name": "Christian Abeyta",
+      "number": "71",
+      "positions": ["G", "C"],
+      "class": "2027",
+      "groups": ["offense"]
+    }
+  ]
+}

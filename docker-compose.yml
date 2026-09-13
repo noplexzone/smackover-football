@@ -1,0 +1,16 @@
+services:
+  smackover-football-preview:
+    image: noplexzone/smackover-football:develop
+    container_name: smackover-football-preview
+    ports:
+      - "10.233.1.100:8779:80"
+    labels:
+      project: smackover-football
+      managed-by: jarvis
+      net.unraid.docker.webui: http://10.233.1.100:8779/
+    restart: unless-stopped
+    mem_limit: 64m
+    cpus: 0.25
+    pids_limit: 64
+    security_opt:
+      - no-new-privileges:true
