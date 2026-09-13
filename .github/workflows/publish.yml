@@ -55,7 +55,7 @@ jobs:
           for page in schedule program gameday community; do
             test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8780/$page.html)" = 404
           done
-          for asset in styles.css roster.js assets/buckaroo-logo.png assets/field.webp assets/uniform-away.webp assets/uniform-home.webp; do
+          for asset in styles.css roster.js assets/buckaroo-logo.png assets/field.webp assets/jersey-away-6.svg assets/jersey-home-6.svg; do
             curl --fail http://127.0.0.1:8780/$asset -o /tmp/check-asset
             cmp dist/$asset /tmp/check-asset
           done

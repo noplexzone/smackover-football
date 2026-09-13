@@ -5,17 +5,18 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node --test tests/build.test.mjs",
+    "test": "node --test tests/*.test.mjs",
     "test:e2e": "playwright test",
     "format:check": "prettier --check src scripts tests playwright.config.js",
     "design:check": "impeccable detect src/"
   },
   "dependencies": {
+    "@fontsource/allura": "5.3.0",
     "@fontsource/oswald": "5.3.0"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",
-    "prettier": "3.9.6",
-    "impeccable": "4.1.0"
+    "impeccable": "4.1.0",
+    "prettier": "3.9.6"
   }
 }

@@ -23,10 +23,17 @@ function showPreview(card) {
     .replaceChildren(card.querySelector("template").content.cloneNode(true));
   preview.hidden = false;
   const rect = card.getBoundingClientRect();
+  const formation = card.closest(".unit-formation").getBoundingClientRect();
+  // Keep the whole formation reachable, rather than covering later strips.
+  // A compact preview can scroll independently of the fixed-height formation.
+  const above = formation.top - 8;
+  const below = innerHeight - formation.bottom - 8;
+  const useAbove = above >= below;
+  preview.style.maxHeight = `${Math.max(80, useAbove ? above : below)}px`;
   const width = preview.offsetWidth;
   const height = preview.offsetHeight;
   preview.style.left = `${Math.max(8, Math.min(rect.left, innerWidth - width - 8))}px`;
-  preview.style.top = `${Math.max(8, Math.min(rect.bottom, innerHeight - height - 8))}px`;
+  preview.style.top = `${Math.max(8, useAbove ? formation.top - height : formation.bottom)}px`;
 }
 function openProfile(card) {
   hidePreview();
@@ -61,13 +68,38 @@ controls.forEach((button) =>
     document.querySelector("#formation-label").textContent = button.textContent;
   }),
 );
+function activateCard(card) {
+  if (!card) return;
+  for (const sibling of card.parentElement.children) {
+    sibling.classList.toggle("is-active", sibling === card);
+  }
+}
+for (const stack of document.querySelectorAll(".card-stack")) {
+  stack.addEventListener("pointerleave", () => {
+    const focused = stack.contains(document.activeElement)
+      ? document.activeElement
+      : null;
+    activateCard(focused || stack.firstElementChild);
+  });
+  stack.addEventListener("focusout", (event) => {
+    if (!stack.contains(event.relatedTarget)) {
+      activateCard(
+        stack.querySelector(".stack-card:hover") || stack.firstElementChild,
+      );
+    }
+  });
+}
 cards.forEach((card) => {
   card.addEventListener("click", () => openProfile(card));
   card.addEventListener("pointerenter", (event) => {
-    if (event.pointerType === "mouse") showPreview(card);
+    if (event.pointerType === "mouse") {
+      activateCard(card);
+      showPreview(card);
+    }
   });
   card.addEventListener("pointerleave", deferHide);
   card.addEventListener("focus", () => {
+    activateCard(card);
     if (card.matches(":focus-visible")) showPreview(card);
   });
   card.addEventListener("blur", deferHide);

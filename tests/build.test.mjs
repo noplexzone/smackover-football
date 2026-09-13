@@ -96,8 +96,8 @@ test("complete chronological schedule and supplied media", async () => {
   );
   for (const name of [
     "field.webp",
-    "uniform-away.webp",
-    "uniform-home.webp",
+    "jersey-away-6.svg",
+    "jersey-home-6.svg",
     "buckaroo-logo.png",
   ])
     assert.ok(html.includes(`assets/${name}`));

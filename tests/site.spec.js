@@ -167,3 +167,65 @@ test("preview is hoverable outside stack, unclipped and dismissible", async ({
   await page.getByRole("button", { name: "Dismiss player preview" }).click();
   await expect(preview).toBeHidden();
 });
+
+for (const viewport of [
+  { width: 1366, height: 768 },
+  { width: 390, height: 844 },
+]) {
+  test(`every accordion strip and active card is exposed at ${viewport.width}`, async ({
+    page,
+  }) => {
+    await page.setViewportSize(viewport);
+    await page.goto("/roster.html");
+    const assertStack = async (stack, activeIndex) => {
+      const geometry = await stack.evaluate((el) =>
+        [...el.children].map((card) => {
+          const r = card.getBoundingClientRect();
+          return {
+            top: r.top,
+            bottom: r.bottom,
+            height: r.height,
+            exposed: [2, r.height / 2, r.height - 2].every((y) =>
+              card.contains(
+                document.elementFromPoint(r.x + r.width / 2, r.y + y),
+              ),
+            ),
+          };
+        }),
+      );
+      expect((await stack.boundingBox()).height).toBe(
+        64 + 24 * (geometry.length - 1),
+      );
+      for (const [index, card] of geometry.entries()) {
+        expect(card.height).toBe(index === activeIndex ? 64 : 24);
+        expect(card.exposed).toBe(true);
+        if (index) expect(card.top).toBe(geometry[index - 1].bottom);
+      }
+    };
+    for (const unit of ["offense", "defense", "special"]) {
+      await page.locator(`[data-group="${unit}"]`).click();
+      for (const stack of await page
+        .locator(`[data-unit="${unit}"] .card-stack`)
+        .all()) {
+        await assertStack(stack, 0);
+        const cards = await stack.locator(".stack-card").all();
+        for (const [index, card] of cards.entries()) {
+          const box = await card.boundingBox();
+          await page.mouse.move(box.x + box.width / 2, box.y + box.height - 4);
+          await expect(card).toHaveClass(/is-active/);
+          await assertStack(stack, index);
+          await page.keyboard.press("Escape");
+          await assertStack(stack, index);
+          await page.mouse.move(0, 0);
+          await assertStack(stack, 0);
+          await card.focus();
+          await page.keyboard.press("Escape");
+          await page.mouse.move(0, 0);
+          await assertStack(stack, index);
+          await page.locator(`[data-group="${unit}"]`).focus();
+          await assertStack(stack, 0);
+        }
+      }
+    }
+  });
+}
