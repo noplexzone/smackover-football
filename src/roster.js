@@ -1,3 +1,5 @@
+document.querySelector(".roster-toolbar").hidden = false;
+document.querySelector("#roster-fallback").hidden = true;
 const controls = document.querySelectorAll("[data-group]");
 const cards = [...document.querySelectorAll(".player-card")];
 const count = document.querySelector("#player-count");

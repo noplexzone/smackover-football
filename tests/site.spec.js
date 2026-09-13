@@ -62,15 +62,16 @@ test("roster hover, keyboard, filter and dialog", async ({ page }) => {
   await page.getByRole("button", { name: "Close player details" }).click();
   await expect(page.getByRole("dialog")).not.toBeVisible();
 });
-test("mobile tap, reduced motion and screenshots", async ({ page }) => {
-  await page.setViewportSize({ width: 390, height: 844 });
+test("mobile tap, reduced motion and screenshots", async ({ browser }) => {
+  const context = await browser.newContext({
+    hasTouch: true,
+    viewport: { width: 390, height: 844 },
+    baseURL: "http://127.0.0.1:8779",
+  });
+  const page = await context.newPage();
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/roster.html");
-  await page
-    .locator(".player-card:visible")
-    .first()
-    .tap({ force: true })
-    .catch(() => page.locator(".player-card:visible").first().click());
+  await page.locator(".player-card:visible").first().tap();
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.getByRole("button", { name: "Close player details" }).click();
   for (const width of [390, 1440]) {
@@ -83,6 +84,7 @@ test("mobile tap, reduced motion and screenshots", async ({ page }) => {
       });
     }
   }
+  await context.close();
 });
 test("no-JavaScript roster and 200 percent equivalent reflow", async ({
   browser,
@@ -96,8 +98,12 @@ test("no-JavaScript roster and 200 percent equivalent reflow", async ({
   await expect(
     page.getByText("Mitchell Polk", { exact: true }).first(),
   ).toBeVisible();
-  await expect(page.locator("noscript")).toContainText(
-    "All sampled players are shown",
-  );
+  await expect(page.locator("#roster-fallback")).toBeVisible();
+  await expect(page.locator(".player-card")).toHaveCount(17);
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
   await context.close();
 });
