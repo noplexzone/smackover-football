@@ -1,157 +1,4880 @@
 {
+  "season": 2026,
+  "seasonLabel": "2026\u201327",
+  "fetchedAt": "2026-09-13T01:54:51Z",
+  "rosterSource": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/football/roster/",
+  "statsSource": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/football/stats/",
   "players": [
     {
-      "id": "polk",
-      "name": "Mitchell Polk",
-      "number": "2",
-      "positions": ["QB"],
-      "class": "2026",
-      "height": "6\u20322\u2033",
-      "weight": "190 lb",
-      "groups": ["offense"]
+      "id": "aqeobo6qhveqa",
+      "name": "Carter Walker",
+      "number": "0",
+      "grade": "Sr.",
+      "height": "6'5\"",
+      "weight": "195 lbs",
+      "positions": ["DE", "TE"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/carter-walker/?careerid=aqeobo6qhveqa",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "7"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "4"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "11"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "5.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": "5.0"
+        },
+        {
+          "category": "Sacks",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks",
+          "value": "1.0"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks Yards Lost",
+          "value": "9"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Sacks",
+          "label": "QB Hurries",
+          "value": "1"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Yards Per INT",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Per Game",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Passes Defensed",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recoveries",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recovery Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Caused Fumbles",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked Punts",
+          "value": "1"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked FG",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
     },
     {
-      "id": "brown",
-      "name": "Joseph Brown",
+      "id": "g1vsg9bnh4rqa",
+      "name": "Connor Knight",
+      "number": "1",
+      "grade": "Sr.",
+      "height": "5'10\"",
+      "weight": "170 lbs",
+      "positions": ["S", "WR"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/connor-knight/?careerid=g1vsg9bnh4rqa",
+      "stats": [
+        {
+          "category": "Rushing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Rushing",
+          "label": "Carries",
+          "value": "1"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards",
+          "value": "1"
+        },
+        {
+          "category": "Rushing",
+          "label": "Yards Per Carry",
+          "value": "1.0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Long",
+          "value": "1"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing 100 Plus",
+          "value": "0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing TDs",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": "1"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "1"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": "1"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "1"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "3"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "1.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": "1.0"
+        },
+        {
+          "category": "Conversions",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Conversions",
+          "label": "PAT Rushing",
+          "value": "1"
+        },
+        {
+          "category": "Conversions",
+          "label": "PAT Receiving",
+          "value": null
+        },
+        {
+          "category": "Conversions",
+          "label": "PATConversions",
+          "value": "1"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "h45tsqf0e4h11",
+      "name": "Micah McElroy",
+      "number": "2",
+      "grade": "Sr.",
+      "height": "5'8\"",
+      "weight": "155 lbs",
+      "positions": ["DB", "RB"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/micah-mcelroy/?careerid=h45tsqf0e4h11",
+      "stats": [
+        {
+          "category": "Rushing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Rushing",
+          "label": "Carries",
+          "value": "3"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards",
+          "value": "14"
+        },
+        {
+          "category": "Rushing",
+          "label": "Yards Per Carry",
+          "value": "4.7"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards Per Game",
+          "value": "7.0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Long",
+          "value": "8"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing 100 Plus",
+          "value": "0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing TDs",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": "14"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "14"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "7.0"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": "14"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "14"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "7.0"
+        },
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "4"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "3"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "7"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "3.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Yards Per INT",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Per Game",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Passes Defensed",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recoveries",
+          "value": "1"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recovery Yards",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Caused Fumbles",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked Punts",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked FG",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "j4i0e2tcm92vf",
+      "name": "Keaton Thurman",
       "number": "3",
-      "positions": ["RB", "SB"],
-      "class": "2026",
-      "height": "6\u20320\u2033",
-      "weight": "200 lb",
-      "groups": ["offense"]
+      "grade": "Sr.",
+      "height": "6'0\"",
+      "weight": "180 lbs",
+      "positions": ["S", "WR"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/keaton-thurman/?careerid=j4i0e2tcm92vf",
+      "stats": [
+        {
+          "category": "Receiving",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receptions",
+          "value": "3"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards",
+          "value": "33"
+        },
+        {
+          "category": "Receiving",
+          "label": "Yards Per Catch",
+          "value": "11.0"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards Per Game",
+          "value": "16.5"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Long",
+          "value": "18"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving TDs",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": "33"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "33"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "16.5"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": "33"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "33"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "16.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "3"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "7"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "10"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "5.0"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": "1.0"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Yards Per INT",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Per Game",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Passes Defensed",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recoveries",
+          "value": "1"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recovery Yards",
+          "value": "0"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Caused Fumbles",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked Punts",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked FG",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
     },
     {
-      "id": "bryant",
-      "name": "Jaden Bryant",
+      "id": "me058igguk9i2",
+      "name": "Braxton Bryant",
+      "number": "4",
+      "grade": "Sr.",
+      "height": "5'7\"",
+      "weight": "160 lbs",
+      "positions": ["WR", "S", "PR"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/braxton-bryant/?careerid=me058igguk9i2",
+      "stats": [
+        {
+          "category": "Rushing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Rushing",
+          "label": "Carries",
+          "value": "2"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards",
+          "value": "12"
+        },
+        {
+          "category": "Rushing",
+          "label": "Yards Per Carry",
+          "value": "6.0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards Per Game",
+          "value": "6.0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Long",
+          "value": "11"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing 100 Plus",
+          "value": "0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing TDs",
+          "value": null
+        },
+        {
+          "category": "Receiving",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receptions",
+          "value": "4"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards",
+          "value": "48"
+        },
+        {
+          "category": "Receiving",
+          "label": "Yards Per Catch",
+          "value": "12.0"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards Per Game",
+          "value": "24.0"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Long",
+          "value": "17"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving TDs",
+          "value": "1"
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Offensive Fumbles",
+          "value": "1"
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Offensive Fumbles Lost",
+          "value": null
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Pancake Blocks",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": "12"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": "48"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": "17"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "77"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "38.5"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": "12"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": "48"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "60"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "30.0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Returns",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Yards Avg",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Long",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Returns",
+          "value": "1"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Yards",
+          "value": "17"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Yards Avg",
+          "value": "17.0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Long",
+          "value": "17"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Fair Catches",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Total Return Yards",
+          "value": "17"
+        },
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": "1"
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": "6"
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": "6"
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": "3.0"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Rushing TDs",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Receiving TDs",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Fumbles Returned for Tochdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Interceptions Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Punts Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Kickoffs Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Total TDs",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "TDs Per Game",
+          "value": "0.5"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "6cfuld537o422",
+      "name": "Payton Teasley",
+      "number": "5",
+      "grade": "Sr.",
+      "height": "6'0\"",
+      "weight": "220 lbs",
+      "positions": ["DE", "RB"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/payton-teasley/?careerid=6cfuld537o422",
+      "stats": [
+        {
+          "category": "Rushing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Rushing",
+          "label": "Carries",
+          "value": "1"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards",
+          "value": "1"
+        },
+        {
+          "category": "Rushing",
+          "label": "Yards Per Carry",
+          "value": "1.0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Long",
+          "value": "1"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing 100 Plus",
+          "value": "0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing TDs",
+          "value": "1"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": "1"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "1"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": "1"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "1"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "6"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "3.0"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": "3.0"
+        },
+        {
+          "category": "Sacks",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks",
+          "value": ".5"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks Yards Lost",
+          "value": null
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks Per Game",
+          "value": "0.3"
+        },
+        {
+          "category": "Sacks",
+          "label": "QB Hurries",
+          "value": "1"
+        },
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": "1"
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": "6"
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": "6"
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": "3.0"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Rushing TDs",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Receiving TDs",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Fumbles Returned for Tochdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Interceptions Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Punts Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Kickoffs Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Total TDs",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "TDs Per Game",
+          "value": "0.5"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "80acttlj6cvff",
+      "name": "Trason Parlor",
+      "number": "6",
+      "grade": "Jr.",
+      "height": "5'9\"",
+      "weight": "170 lbs",
+      "positions": ["QB", "P"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/trason-parlor/?careerid=80acttlj6cvff",
+      "stats": [
+        {
+          "category": "Passing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Passing",
+          "label": "Completions",
+          "value": "14"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing Att",
+          "value": "18"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing Yards",
+          "value": "253"
+        },
+        {
+          "category": "Passing",
+          "label": "Completion Percentage",
+          "value": ".778"
+        },
+        {
+          "category": "Passing",
+          "label": "Yards Per Completion",
+          "value": "18.1"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing Yards Per Game",
+          "value": "126.5"
+        },
+        {
+          "category": "Passing",
+          "label": "Completions Per Game",
+          "value": "7.0"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing TDs",
+          "value": "3"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing TDs Per Game",
+          "value": "1.5"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing Int",
+          "value": "0"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing Long",
+          "value": "33"
+        },
+        {
+          "category": "Passing",
+          "label": "QB Rating",
+          "value": "158.6"
+        },
+        {
+          "category": "Rushing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Rushing",
+          "label": "Carries",
+          "value": "19"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards",
+          "value": "184"
+        },
+        {
+          "category": "Rushing",
+          "label": "Yards Per Carry",
+          "value": "9.7"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards Per Game",
+          "value": "92.0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Long",
+          "value": "46"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing 100 Plus",
+          "value": "1"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing TDs",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": "184"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "184"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "92.0"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": "184"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": "253"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "437"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "218.5"
+        },
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": "12"
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": "20"
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": "10.0"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Rushing TDs",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Receiving TDs",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Fumbles Returned for Tochdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Interceptions Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Punts Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Kickoffs Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Total TDs",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "TDs Per Game",
+          "value": "1.0"
+        },
+        {
+          "category": "Conversions",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Conversions",
+          "label": "PAT Rushing",
+          "value": "1"
+        },
+        {
+          "category": "Conversions",
+          "label": "PAT Receiving",
+          "value": null
+        },
+        {
+          "category": "Conversions",
+          "label": "PATConversions",
+          "value": "1"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "2ghdl8gigvbbb",
+      "name": "Slade Arnold",
       "number": "7",
-      "positions": ["QB", "WR"],
-      "class": "2026",
-      "height": "6\u20323\u2033",
-      "weight": "185 lb",
-      "groups": ["offense"]
+      "grade": "Jr.",
+      "height": "5'11\"",
+      "weight": "160 lbs",
+      "positions": ["OLB", "WR"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/slade-arnold/?careerid=2ghdl8gigvbbb",
+      "stats": [
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": "0"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "0"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "0.0"
+        },
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "3"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "8"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "11"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "5.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": "3.0"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Yards Per INT",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Per Game",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Passes Defensed",
+          "value": "1"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recoveries",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recovery Yards",
+          "value": "0"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Caused Fumbles",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked Punts",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked FG",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Returns",
+          "value": "1"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Yards",
+          "value": "0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Yards Avg",
+          "value": "0.0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Long",
+          "value": "0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Returns",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Yards Avg",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Long",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Fair Catches",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Total Return Yards",
+          "value": "0"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
     },
     {
-      "id": "king",
-      "name": "Jeremiah King",
-      "number": "2",
-      "positions": ["WR", "CB"],
-      "class": "2026",
-      "height": "5\u20328\u2033",
-      "weight": "121 lb",
-      "groups": ["offense", "defense"]
+      "id": "8pmk5s2e9i3j3",
+      "name": "Branton Nugent",
+      "number": "8",
+      "grade": "Sr.",
+      "height": "6'1\"",
+      "weight": "150 lbs",
+      "positions": ["WR"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/branton-nugent/?careerid=8pmk5s2e9i3j3",
+      "stats": [
+        {
+          "category": "Receiving",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receptions",
+          "value": "2"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards",
+          "value": "60"
+        },
+        {
+          "category": "Receiving",
+          "label": "Yards Per Catch",
+          "value": "30.0"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards Per Game",
+          "value": "60.0"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Long",
+          "value": "33"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving TDs",
+          "value": "1"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": "60"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "60"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "60.0"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": "60"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "60"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "60.0"
+        },
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": "1"
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": "6"
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": "6"
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": "6.0"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Rushing TDs",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Receiving TDs",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Fumbles Returned for Tochdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Interceptions Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Punts Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Kickoffs Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Total TDs",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "TDs Per Game",
+          "value": "1.0"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
     },
     {
-      "id": "robinson",
-      "name": "Jamari Robinson",
-      "number": "11",
-      "positions": ["WR", "CB"],
-      "class": "2026",
-      "groups": ["offense", "defense"]
-    },
-    {
-      "id": "zapata",
-      "name": "Samuel Zapata",
-      "number": "21",
-      "positions": ["MLB", "P"],
-      "class": "2026",
-      "groups": ["defense", "special"]
-    },
-    {
-      "id": "micah",
-      "name": "Micah Mcelroy",
-      "number": "22",
-      "positions": ["FS", "WR"],
-      "class": "2027",
-      "height": "5\u20329\u2033",
-      "weight": "155 lb",
-      "groups": ["offense", "defense"]
-    },
-    {
-      "id": "cardin",
-      "name": "Robert Cardin",
-      "number": "23",
-      "positions": ["MLB", "TE"],
-      "height": "5\u203211\u2033",
-      "weight": "215 lb",
-      "groups": ["offense", "defense"]
-    },
-    {
-      "id": "hicks",
+      "id": "or0qqa189o1i2",
       "name": "Kasey Hicks",
-      "number": "25",
+      "number": "9",
+      "grade": "Jr.",
+      "height": "5'9\"",
+      "weight": "165 lbs",
       "positions": ["CB"],
-      "class": "2028",
-      "height": "5\u20329\u2033",
-      "weight": "135 lb",
-      "groups": ["defense"]
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/kasey-hicks/?careerid=or0qqa189o1i2",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "6"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "3.0"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Yards Per INT",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Per Game",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Passes Defensed",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recoveries",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recovery Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Caused Fumbles",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked Punts",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked FG",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
     },
     {
-      "id": "walker",
+      "id": "8f66j7t97kbdd",
+      "name": "Jackson Camacho",
+      "number": "10",
+      "grade": "Sr.",
+      "height": "6'2\"",
+      "weight": "230 lbs",
+      "positions": ["TE", "MLB"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/jackson-camacho/?careerid=8f66j7t97kbdd",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "6"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "7"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "3.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Yards Per INT",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Per Game",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Passes Defensed",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recoveries",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recovery Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Caused Fumbles",
+          "value": "1"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked Punts",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked FG",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "c0pgts3gq9m22",
+      "name": "Madison McElroy",
+      "number": "11",
+      "grade": "Jr.",
+      "height": "5'7\"",
+      "weight": "150 lbs",
+      "positions": ["RB", "OLB"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/madison-mcelroy/?careerid=c0pgts3gq9m22",
+      "stats": [
+        {
+          "category": "Rushing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Rushing",
+          "label": "Carries",
+          "value": "22"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards",
+          "value": "154"
+        },
+        {
+          "category": "Rushing",
+          "label": "Yards Per Carry",
+          "value": "7.0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards Per Game",
+          "value": "77.0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Long",
+          "value": "65"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing 100 Plus",
+          "value": "1"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing TDs",
+          "value": "2"
+        },
+        {
+          "category": "Receiving",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receptions",
+          "value": "1"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards",
+          "value": "-3"
+        },
+        {
+          "category": "Receiving",
+          "label": "Yards Per Catch",
+          "value": "-3.0"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards Per Game",
+          "value": "-1.5"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Long",
+          "value": "0"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving TDs",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": "154"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": "-3"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "151"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "75.5"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": "154"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": "-3"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "151"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "75.5"
+        },
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": "12"
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": "14"
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": "7.0"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Rushing TDs",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Receiving TDs",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Fumbles Returned for Tochdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Interceptions Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Punts Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Kickoffs Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Total TDs",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "TDs Per Game",
+          "value": "1.0"
+        },
+        {
+          "category": "Conversions",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Conversions",
+          "label": "PAT Rushing",
+          "value": "1"
+        },
+        {
+          "category": "Conversions",
+          "label": "PAT Receiving",
+          "value": null
+        },
+        {
+          "category": "Conversions",
+          "label": "PATConversions",
+          "value": "1"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "k8ncp7j55ml00",
+      "name": "Derrick Goodwin",
+      "number": "12",
+      "grade": "So.",
+      "height": "5'8\"",
+      "weight": "160 lbs",
+      "positions": ["S", "QB"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/derrick-goodwin/?careerid=k8ncp7j55ml00",
+      "stats": [
+        {
+          "category": "Passing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Passing",
+          "label": "Completions",
+          "value": "1"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing Att",
+          "value": "1"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing Yards",
+          "value": "-3"
+        },
+        {
+          "category": "Passing",
+          "label": "Completion Percentage",
+          "value": "1.000"
+        },
+        {
+          "category": "Passing",
+          "label": "Yards Per Completion",
+          "value": "-3.0"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing Yards Per Game",
+          "value": "-1.5"
+        },
+        {
+          "category": "Passing",
+          "label": "Completions Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Passing",
+          "label": "Passing TDs",
+          "value": null
+        },
+        {
+          "category": "Passing",
+          "label": "Passing TDs Per Game",
+          "value": null
+        },
+        {
+          "category": "Passing",
+          "label": "Passing Int",
+          "value": null
+        },
+        {
+          "category": "Passing",
+          "label": "Passing Long",
+          "value": null
+        },
+        {
+          "category": "Passing",
+          "label": "QB Rating",
+          "value": "97.9"
+        },
+        {
+          "category": "Rushing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Rushing",
+          "label": "Carries",
+          "value": "3"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards",
+          "value": "32"
+        },
+        {
+          "category": "Rushing",
+          "label": "Yards Per Carry",
+          "value": "10.7"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards Per Game",
+          "value": "16.0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Long",
+          "value": "31"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing 100 Plus",
+          "value": "0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing TDs",
+          "value": "1"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": "32"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "32"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "16.0"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": "32"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": "-3"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "29"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "14.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "4"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "2.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": "1"
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": "6"
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": "6"
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": "3.0"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Rushing TDs",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Receiving TDs",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Fumbles Returned for Tochdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Interceptions Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Punts Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Kickoffs Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Total TDs",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "TDs Per Game",
+          "value": "0.5"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "kvp8iorpf3cue",
+      "name": "Ethan Hedger",
+      "number": "13",
+      "grade": "Jr.",
+      "height": "5'10\"",
+      "weight": "145 lbs",
+      "positions": ["WR"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/ethan-hedger/?careerid=kvp8iorpf3cue",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "phpfc8ble95bb",
+      "name": "Derwin Goodwin",
+      "number": "14",
+      "grade": "So.",
+      "height": "5'9\"",
+      "weight": "155 lbs",
+      "positions": ["WR"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/derwin-goodwin/?careerid=phpfc8ble95bb",
+      "stats": [
+        {
+          "category": "Receiving",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receptions",
+          "value": "4"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards",
+          "value": "97"
+        },
+        {
+          "category": "Receiving",
+          "label": "Yards Per Catch",
+          "value": "24.3"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards Per Game",
+          "value": "48.5"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Long",
+          "value": "52"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving TDs",
+          "value": "1"
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Offensive Fumbles",
+          "value": "1"
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Offensive Fumbles Lost",
+          "value": null
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Pancake Blocks",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": "97"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "97"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "48.5"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": "97"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "97"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "48.5"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Yards Per INT",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Per Game",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Passes Defensed",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recoveries",
+          "value": "1"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recovery Yards",
+          "value": "3"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Caused Fumbles",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked Punts",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked FG",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": "12"
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": "12"
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": "6.0"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Rushing TDs",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Receiving TDs",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Fumbles Returned for Tochdown",
+          "value": "1"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Interceptions Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Punts Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Kickoffs Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Total TDs",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "TDs Per Game",
+          "value": "1.0"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "u5hu5opfb9ltd",
+      "name": "Drew Owens",
+      "number": "15",
+      "grade": "Sr.",
+      "height": "6'0\"",
+      "weight": "210 lbs",
+      "positions": ["ILB", "TE"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/drew-owens/?careerid=u5hu5opfb9ltd",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "8"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "9"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "4.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": "2.0"
+        },
+        {
+          "category": "Sacks",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks",
+          "value": "1.0"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks Yards Lost",
+          "value": "11"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Sacks",
+          "label": "QB Hurries",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "nbtafphpou755",
+      "name": "Xander Ramey",
+      "number": "16",
+      "grade": "So.",
+      "height": "6'0\"",
+      "weight": "215 lbs",
+      "positions": ["ILB", "TE"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/xander-ramey/?careerid=nbtafphpou755",
+      "stats": [
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": "9"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "9"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "4.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "3"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "1.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions",
+          "value": "1"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Yards",
+          "value": "9"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Yards Per INT",
+          "value": "9.0"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Passes Defensed",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recoveries",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recovery Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Caused Fumbles",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked Punts",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked FG",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "pi328pugqj933",
+      "name": "Grantley Burnett",
+      "number": "17",
+      "grade": "So.",
+      "height": "5'8\"",
+      "weight": "150 lbs",
+      "positions": ["CB", "WR"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/grantley-burnett/?careerid=pi328pugqj933",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "vvr4m64c5elff",
+      "name": "Nate Saulsbury",
+      "number": "18",
+      "grade": "Sr.",
+      "height": "6'2\"",
+      "weight": "160 lbs",
+      "positions": ["DB"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/nate-saulsbury/?careerid=vvr4m64c5elff",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": null
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Yards Per INT",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Interceptions Per Game",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Passes Defensed",
+          "value": "1"
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recoveries",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Fumble Recovery Yards",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Caused Fumbles",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked Punts",
+          "value": null
+        },
+        {
+          "category": "Defensive Statistics",
+          "label": "Blocked FG",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "a2claqhfie566",
+      "name": "Jase Castleberry",
+      "number": "20",
+      "grade": "So.",
+      "height": "5'9\"",
+      "weight": "185 lbs",
+      "positions": ["ILB", "TE"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/jase-castleberry/?careerid=a2claqhfie566",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "ggm5tugimp455",
+      "name": "Rylee McDaniel",
+      "number": "21",
+      "grade": "Jr.",
+      "height": "5'7\"",
+      "weight": "155 lbs",
+      "positions": ["WR"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/rylee-mcdaniel/?careerid=ggm5tugimp455",
+      "stats": [
+        {
+          "category": "Receiving",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receptions",
+          "value": "1"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards",
+          "value": "15"
+        },
+        {
+          "category": "Receiving",
+          "label": "Yards Per Catch",
+          "value": "15.0"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Yards Per Game",
+          "value": "7.5"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving Long",
+          "value": "15"
+        },
+        {
+          "category": "Receiving",
+          "label": "Receiving TDs",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": "15"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": "0"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "15"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "7.5"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": "15"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "15"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "7.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": null
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Returns",
+          "value": "1"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Yards",
+          "value": "0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Yards Avg",
+          "value": "0.0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Long",
+          "value": "0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Returns",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Yards Avg",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Long",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Fair Catches",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Total Return Yards",
+          "value": "0"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "v2f5j2gt4tfn7",
+      "name": "Kieundre Billingly",
+      "number": "22",
+      "grade": "So.",
+      "height": "5'10\"",
+      "weight": "175 lbs",
+      "positions": ["RB", "KR"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/kieundre-billingly/?careerid=v2f5j2gt4tfn7",
+      "stats": [
+        {
+          "category": "Rushing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Rushing",
+          "label": "Carries",
+          "value": "8"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards",
+          "value": "174"
+        },
+        {
+          "category": "Rushing",
+          "label": "Yards Per Carry",
+          "value": "21.8"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards Per Game",
+          "value": "87.0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Long",
+          "value": "72"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing 100 Plus",
+          "value": "0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing TDs",
+          "value": "3"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": "174"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "174"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "87.0"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": "174"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "174"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "87.0"
+        },
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": "3"
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": "18"
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": "18"
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": "9.0"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Rushing TDs",
+          "value": "3"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Receiving TDs",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Fumbles Returned for Tochdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Interceptions Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Punts Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Kickoffs Returned for Touchdown",
+          "value": null
+        },
+        {
+          "category": "Touchdowns",
+          "label": "Total TDs",
+          "value": "3"
+        },
+        {
+          "category": "Touchdowns",
+          "label": "TDs Per Game",
+          "value": "1.5"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "ohe8b8c9cl577",
+      "name": "Jacob Mills",
+      "number": "23",
+      "grade": "Sr.",
+      "height": "5'7\"",
+      "weight": "245 lbs",
+      "positions": ["NG", "FB"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/jacob-mills/?careerid=ohe8b8c9cl577",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "jev6urh8jfs55",
+      "name": "Ryder Beasley",
+      "number": "24",
+      "grade": "Jr.",
+      "height": "5'10\"",
+      "weight": "190 lbs",
+      "positions": ["ILB", "RB"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/ryder-beasley/?careerid=jev6urh8jfs55",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "p27lkdueednaa",
+      "name": "Dax Preston",
+      "number": "27",
+      "grade": "Fr.",
+      "height": "5'6\"",
+      "weight": "150 lbs",
+      "positions": ["K"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/dax-preston/?careerid=p27lkdueednaa",
+      "stats": [
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": "0"
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": null
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "PAT Kicking Made",
+          "value": "0"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "PAT Kicking Att",
+          "value": "2"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "PAT Kicking Percentage",
+          "value": ".0"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "FG Made",
+          "value": null
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "FG Attempted",
+          "value": null
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "FG Percentage",
+          "value": null
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "FG Long",
+          "value": null
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "Total Kicking Points",
+          "value": "0"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "Total Kicking Points Per Game",
+          "value": ".0"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "he5m9kn32on44",
       "name": "Thomas Walker",
       "number": "30",
-      "positions": ["MLB"],
-      "class": "2028",
-      "groups": ["defense"]
+      "grade": "Jr.",
+      "height": "5'11\"",
+      "weight": "210 lbs",
+      "positions": ["ILB", "TE"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/thomas-walker/?careerid=he5m9kn32on44",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
     },
     {
-      "id": "lewis",
-      "name": "Jackson Lewis",
-      "number": "35",
-      "positions": ["G", "NG"],
-      "class": "2027",
-      "groups": ["offense", "defense"]
+      "id": "nid6dlmvfuo99",
+      "name": "Lane Falcon",
+      "number": "32",
+      "grade": "Jr.",
+      "height": "5'10\"",
+      "weight": "170 lbs",
+      "positions": ["OLB"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/lane-falcon/?careerid=nid6dlmvfuo99",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": null
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "1.0"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
     },
     {
-      "id": "kinder",
-      "name": "Nick Kinder",
+      "id": "p9f1rg5db8sn7",
+      "name": "Timmy Heaton",
+      "number": "34",
+      "grade": "Fr.",
+      "height": "5'7\"",
+      "weight": "130 lbs",
+      "positions": ["K", "P"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/timmy-heaton/?careerid=p9f1rg5db8sn7",
+      "stats": [
+        {
+          "category": "Points",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "Points",
+          "label": "Total TDs",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total TD Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Conversion Points",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Safeties",
+          "value": null
+        },
+        {
+          "category": "Points",
+          "label": "Total Kicking Points",
+          "value": "3"
+        },
+        {
+          "category": "Points",
+          "label": "Total Points",
+          "value": "3"
+        },
+        {
+          "category": "Points",
+          "label": "Points Per Game",
+          "value": "3.0"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "PAT Kicking Made",
+          "value": "3"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "PAT Kicking Att",
+          "value": "6"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "PAT Kicking Percentage",
+          "value": ".5"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "FG Made",
+          "value": null
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "FG Attempted",
+          "value": null
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "FG Percentage",
+          "value": null
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "FG Long",
+          "value": null
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "Total Kicking Points",
+          "value": "3"
+        },
+        {
+          "category": "PATs and Field Goals",
+          "label": "Total Kicking Points Per Game",
+          "value": "3.0"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "7uj01u1tqjb00",
+      "name": "Thomas Perry",
+      "number": "44",
+      "grade": "Jr.",
+      "height": "5'9\"",
+      "weight": "165 lbs",
+      "positions": ["ILB", "RB"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/thomas-perry/?careerid=7uj01u1tqjb00",
+      "stats": [
+        {
+          "category": "Rushing",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Rushing",
+          "label": "Carries",
+          "value": "8"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards",
+          "value": "13"
+        },
+        {
+          "category": "Rushing",
+          "label": "Yards Per Carry",
+          "value": "1.6"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Yards Per Game",
+          "value": "6.5"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing Long",
+          "value": "6"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing 100 Plus",
+          "value": "0"
+        },
+        {
+          "category": "Rushing",
+          "label": "Rushing TDs",
+          "value": null
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Offensive Fumbles",
+          "value": "1"
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Offensive Fumbles Lost",
+          "value": null
+        },
+        {
+          "category": "Offensive Fumbles and Pancake Blocks",
+          "label": "Pancake Blocks",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": "13"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": "16"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "29"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "14.5"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Rushing Yards",
+          "value": "13"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Passing Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards",
+          "value": "13"
+        },
+        {
+          "category": "Total Yards",
+          "label": "Total Yards Per Game",
+          "value": "6.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "3"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": null
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "3"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "1.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": "1.0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Returns",
+          "value": "2"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Yards",
+          "value": "16"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Yards Avg",
+          "value": "8.0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Long",
+          "value": "9"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Returns",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Yards Avg",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Long",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Fair Catches",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Total Return Yards",
+          "value": "16"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "kji7s3pg4app9",
+      "name": "Mason Loscheider",
+      "number": "50",
+      "grade": "Jr.",
+      "height": "5'8\"",
+      "weight": "230 lbs",
+      "positions": ["OG"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/mason-loscheider/?careerid=kji7s3pg4app9",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "2t1fj64q1lgdd",
+      "name": "Beau Trabbic",
+      "number": "51",
+      "grade": "So.",
+      "height": "5'8\"",
+      "weight": "165 lbs",
+      "positions": ["DE", "OT"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/beau-trabbic/?careerid=2t1fj64q1lgdd",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": null
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "d75td4fql91rb",
+      "name": "Stewart Bates",
       "number": "53",
-      "positions": ["DT"],
-      "class": "2026",
-      "groups": ["defense"]
+      "grade": "Jr.",
+      "height": "5'8\"",
+      "weight": "230 lbs",
+      "positions": ["OL", "DT"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/stewart-bates/?careerid=d75td4fql91rb",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
     },
     {
-      "id": "johnson",
+      "id": "2el2p425dq1aa",
       "name": "Kyland Johnson",
       "number": "54",
-      "positions": ["T", "DT"],
-      "class": "2028",
-      "height": "6\u20320\u2033",
-      "weight": "235 lb",
-      "groups": ["offense", "defense"]
+      "grade": "Jr.",
+      "height": "6'0\"",
+      "weight": "240 lbs",
+      "positions": ["OT", "DT"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/kyland-johnson/?careerid=2el2p425dq1aa",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": null
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "1.0"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
     },
     {
-      "id": "bennett",
-      "name": "Aiden bennett",
+      "id": "5v7v637u8bs99",
+      "name": "Tyler Phillips",
+      "number": "55",
+      "grade": "So.",
+      "height": "5'10\"",
+      "weight": "200 lbs",
+      "positions": ["ILB", "OT"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/tyler-phillips/?careerid=5v7v637u8bs99",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "evc5bi9is0vff",
+      "name": "Gaige Woolsey",
       "number": "56",
-      "positions": ["NG", "C"],
-      "class": "2026",
-      "groups": ["offense", "defense"]
+      "grade": "Jr.",
+      "height": "5'7\"",
+      "weight": "230 lbs",
+      "positions": ["OG"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/gaige-woolsey/?careerid=evc5bi9is0vff",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
     },
     {
-      "id": "sharp",
-      "name": "Tucker Sharp",
-      "number": "60",
-      "positions": ["G"],
-      "class": "2027",
-      "height": "5\u20327\u2033",
-      "weight": "181 lb",
-      "groups": ["offense"]
+      "id": "nd80nea4e8144",
+      "name": "Alliance Points",
+      "number": "61",
+      "grade": "Jr.",
+      "height": "6'1\"",
+      "weight": "235 lbs",
+      "positions": ["OT", "DE"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/alliance-points/?careerid=nd80nea4e8144",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
     },
     {
-      "id": "white",
+      "id": "tk839og0s5aue",
+      "name": "David Mendenhall",
+      "number": "63",
+      "grade": "Sr.",
+      "height": "6'0\"",
+      "weight": "220 lbs",
+      "positions": ["C", "DE"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/david-mendenhall/?careerid=tk839og0s5aue",
+      "stats": [
+        {
+          "category": "All Purpose Yards",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Rushing Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Receiving Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Kickoff Return Yards",
+          "value": "0"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "Interceptions Yards",
+          "value": null
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards",
+          "value": "0"
+        },
+        {
+          "category": "All Purpose Yards",
+          "label": "All Purpose Yards Per Game",
+          "value": "0.0"
+        },
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "1.0"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Returns",
+          "value": "1"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Yards",
+          "value": "0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Yards Avg",
+          "value": "0.0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Kickoff Return Long",
+          "value": "0"
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Returns",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Yards",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Yards Avg",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Long",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Punt Return Fair Catches",
+          "value": null
+        },
+        {
+          "category": "Kickoff and Punt Returns",
+          "label": "Total Return Yards",
+          "value": "0"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "34hf5bvig94dd",
       "name": "Colton White",
       "number": "65",
-      "positions": ["DT"],
-      "class": "2027",
-      "groups": ["defense"]
+      "grade": "Sr.",
+      "height": "6'3\"",
+      "weight": "285 lbs",
+      "positions": ["NG"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/colton-white/?careerid=34hf5bvig94dd",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "3"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "2.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": "2.0"
+        },
+        {
+          "category": "Sacks",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks",
+          "value": ".5"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks Yards Lost",
+          "value": "6"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks Per Game",
+          "value": "0.3"
+        },
+        {
+          "category": "Sacks",
+          "label": "QB Hurries",
+          "value": "2"
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
     },
     {
-      "id": "abeyta",
-      "name": "Christian Abeyta",
+      "id": "6ksr243tcgl88",
+      "name": "Trenton Turner",
+      "number": "68",
+      "grade": "Jr.",
+      "height": "6'2\"",
+      "weight": "290 lbs",
+      "positions": ["DT"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/trenton-turner/?careerid=6ksr243tcgl88",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "3"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "1.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "ob3cq86s60ni2",
+      "name": "Christian Aybeta",
       "number": "71",
-      "positions": ["G", "C"],
-      "class": "2027",
-      "groups": ["offense"]
+      "grade": "Sr.",
+      "height": "5'11\"",
+      "weight": "220 lbs",
+      "positions": ["OG", "DT"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/christian-aybeta/?careerid=ob3cq86s60ni2",
+      "stats": [
+        {
+          "category": "Tackles",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Tackles",
+          "label": "Solo Tackle",
+          "value": "1"
+        },
+        {
+          "category": "Tackles",
+          "label": "Assists",
+          "value": "4"
+        },
+        {
+          "category": "Tackles",
+          "label": "Total Tackles",
+          "value": "5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles Per Game",
+          "value": "2.5"
+        },
+        {
+          "category": "Tackles",
+          "label": "Tackles For Loss",
+          "value": "2.0"
+        },
+        {
+          "category": "Sacks",
+          "label": "Games Played",
+          "value": "2"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks",
+          "value": "1.0"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks Yards Lost",
+          "value": "1"
+        },
+        {
+          "category": "Sacks",
+          "label": "Sacks Per Game",
+          "value": "0.5"
+        },
+        {
+          "category": "Sacks",
+          "label": "QB Hurries",
+          "value": null
+        }
+      ],
+      "statCoverage": "reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "gpe8lerikfek4",
+      "name": "Clayton Winborn",
+      "number": "72",
+      "grade": "Jr.",
+      "height": "6'1\"",
+      "weight": "265 lbs",
+      "positions": ["OG", "K"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/clayton-winborn/?careerid=gpe8lerikfek4",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
+    },
+    {
+      "id": "tqk78tlj77n11",
+      "name": "Asher Ford",
+      "number": "77",
+      "grade": "So.",
+      "height": "6'2\"",
+      "weight": "290 lbs",
+      "positions": ["NG", "OT"],
+      "source": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/athletes/asher-ford/?careerid=tqk78tlj77n11",
+      "stats": [],
+      "statCoverage": "no_reported_season_stats",
+      "photo": null
     }
-  ]
+  ],
+  "games": [
+    {
+      "date": "2026-08-28",
+      "opponent": "McGehee",
+      "homeAway": "home",
+      "pointsFor": 38,
+      "pointsAgainst": 6,
+      "source": "https://www.maxpreps.com/ar/football/game/mcgehee-vs-smackover/8-28-2026/?c=8426d705-f1c5-44c0-acd1-b04ee2e9529a"
+    },
+    {
+      "date": "2026-09-03",
+      "opponent": "Junction City",
+      "homeAway": "away",
+      "pointsFor": 55,
+      "pointsAgainst": 12,
+      "source": "https://www.maxpreps.com/ar/football/game/junction-city-vs-smackover/9-3-2026/?c=eebc2f5f-8e20-47a2-8812-e974e5c1a592"
+    }
+  ],
+  "checkedAt": "2026-09-12",
+  "rosterUpdatedAt": "2026-09-10T19:41:00Z",
+  "statsUpdatedAt": "2026-09-06T13:22:00Z"
 }

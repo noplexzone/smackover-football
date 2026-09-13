@@ -6,13 +6,13 @@
   font-display: swap;
 }
 :root {
-  --ink: #101211;
-  --paper: #f2f1eb;
-  --white: #fff;
-  --muted: #b8bcb5;
-  --field: #1b2520;
-  --accent: #d9f584;
-  --line: #3d453d;
+  --ink: #111111;
+  --paper: #efefef;
+  --white: #ffffff;
+  --muted: #b8b8b8;
+  --field: #202020;
+  --accent: #c6c6c6;
+  --line: #404040;
   --display: Oswald, "Arial Narrow", sans-serif;
   --body: Arial, Helvetica, sans-serif;
   --space: clamp(1.25rem, 4vw, 4rem);
@@ -43,7 +43,7 @@ button {
 }
 button:focus-visible,
 a:focus-visible {
-  outline: 3px solid #598123;
+  outline: 3px solid #545454;
   outline-offset: 5px;
 }
 h1,
@@ -113,7 +113,7 @@ img {
   align-items: center;
   gap: 2rem;
   padding: 1.3rem var(--space);
-  border-bottom: 1px solid #d2d4ca;
+  border-bottom: 1px solid #d0d0d0;
 }
 .brand {
   display: flex;
@@ -187,7 +187,7 @@ nav a:hover {
   width: 0.45rem;
   height: 0.45rem;
   border-radius: 50%;
-  background: #598123;
+  background: #545454;
   margin-right: 0.5rem;
 }
 .hero h1 {
@@ -200,7 +200,7 @@ nav a:hover {
 }
 .hero-copy > p:not(.eyebrow) {
   font-size: 1.05rem;
-  color: #4f554e;
+  color: #515151;
 }
 .actions {
   display: flex;
@@ -223,7 +223,7 @@ nav a:hover {
   border: 1px solid var(--ink);
 }
 .button:hover {
-  background: #30372d;
+  background: #313131;
 }
 .text-link {
   display: inline-block;
@@ -312,14 +312,14 @@ nav a:hover {
 }
 .home-feature p {
   max-width: 43ch;
-  color: #50574c;
+  color: #515151;
 }
 .home-feature .eyebrow {
   color: var(--ink);
 }
 .fine-print {
   font-size: 0.75rem;
-  color: #565e52;
+  color: #575757;
   line-height: 1.7;
   margin-top: 1.5rem;
 }
@@ -367,7 +367,7 @@ nav a:hover {
 .resource-strip {
   padding-top: 3rem;
   padding-bottom: 5rem;
-  border-top: 1px solid #c9cec2;
+  border-top: 1px solid #c8c8c8;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1fr;
   gap: 2rem;
@@ -382,7 +382,7 @@ nav a:hover {
   display: block;
   font: 0.65rem var(--body);
   margin-bottom: 1rem;
-  color: #626c5a;
+  color: #636363;
 }
 .resource-strip b {
   display: block;
@@ -419,13 +419,13 @@ footer > a:last-child {
 .lede {
   max-width: 55ch;
   font-size: 1rem;
-  color: #50574c;
+  color: #515151;
 }
 .source-note {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  border-block: 1px solid #c9cec2;
+  border-block: 1px solid #c8c8c8;
   padding: 1rem 0;
   margin-bottom: 2rem;
   font-size: 0.75rem;
@@ -436,7 +436,7 @@ footer > a:last-child {
 .source-note p {
   margin: 0;
   max-width: 70ch;
-  color: #50574c;
+  color: #515151;
 }
 .source-note > a {
   white-space: nowrap;
@@ -457,7 +457,7 @@ footer > a:last-child {
   gap: 0.25rem;
 }
 .unit-controls button {
-  border: 1px solid #c9cec2;
+  border: 1px solid #c8c8c8;
   color: var(--ink);
   background: transparent;
   padding: 0.7rem 1.2rem;
@@ -525,8 +525,8 @@ footer > a:last-child {
 }
 .player-card {
   padding: 0;
-  border: 1px solid #737e6d;
-  background: #30392e;
+  border: 1px solid #757575;
+  background: #323232;
   color: var(--paper);
   position: relative;
   text-align: left;
@@ -549,7 +549,7 @@ footer > a:last-child {
   font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.04em;
-  border-bottom: 1px solid #617056;
+  border-bottom: 1px solid #626262;
 }
 .card-top > span:last-child {
   color: var(--muted);
@@ -599,7 +599,7 @@ footer > a:last-child {
   gap: 0.6rem;
   position: absolute;
   inset: 0;
-  background: #101211f5;
+  background: #111111f5;
   padding: 0.9rem;
   opacity: 0;
   pointer-events: none;
@@ -645,7 +645,7 @@ dialog {
   color: var(--ink);
 }
 dialog::backdrop {
-  background: #000b;
+  background: #000000bb;
 }
 dialog h2 {
   font-size: 3rem;
@@ -657,7 +657,7 @@ dialog dl {
 }
 dialog dt {
   font-size: 0.7rem;
-  color: #50574c;
+  color: #515151;
 }
 dialog dd {
   margin: 0;
@@ -705,7 +705,7 @@ dialog a {
   display: block;
   text-decoration: none;
   padding: 1.5rem 0;
-  border-bottom: 1px solid #c9cec2;
+  border-bottom: 1px solid #c8c8c8;
 }
 .link-stack small {
   font-size: 0.6rem;
@@ -730,7 +730,7 @@ dialog a {
   font-family: var(--display);
   font-size: clamp(3rem, 5vw, 5rem);
   line-height: 1.2;
-  border-bottom: 1px solid #c9cec2;
+  border-bottom: 1px solid #c8c8c8;
 }
 .stadium-panel address {
   font-style: normal;
@@ -753,11 +753,11 @@ dialog a {
 }
 .game-checklist p,
 .community-list p {
-  color: #50574c;
+  color: #515151;
   font-size: 0.9rem;
 }
 .community-list article {
-  border-bottom: 1px solid #c9cec2;
+  border-bottom: 1px solid #c8c8c8;
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -898,7 +898,7 @@ dialog a {
   }
   .resource-strip a {
     padding: 1.2rem 0;
-    border-top: 1px solid #c9cec2;
+    border-top: 1px solid #c8c8c8;
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -1013,5 +1013,454 @@ dialog a {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Current-season, two-page surfaces. All palette values are neutral. */
+.season-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.last-game {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  color: var(--paper);
+}
+.last-game > img {
+  opacity: 0.4;
+}
+.score-content {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.score-content > .eyebrow {
+  border-bottom: 1px solid #777;
+  padding-bottom: 1rem;
+  font-size: 0.75rem;
+}
+.game-date {
+  color: #ccc;
+  font-size: 0.85rem;
+}
+.score-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #666;
+  padding: 0.75rem 0;
+}
+.score-line > span {
+  font-family: var(--display);
+  font-size: clamp(1.5rem, 2.5vw, 2.8rem);
+  line-height: 1.2;
+}
+.score-line small {
+  display: block;
+  font: 0.65rem var(--body);
+  letter-spacing: 0.15em;
+  margin-top: 0.5rem;
+}
+.score-line > strong {
+  font-family: var(--display);
+  font-size: clamp(5rem, 8vw, 8rem);
+  line-height: 1;
+}
+.score-line.opponent {
+  color: #ccc;
+}
+.score-outcome {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin: 1.25rem 0 2rem;
+}
+.score-outcome span {
+  color: #ccc;
+}
+.score-content > a {
+  font-size: 0.8rem;
+}
+.results-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  border-bottom: 1px solid #ccc;
+}
+.result-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-block: 1px solid #ccc;
+  text-decoration: none;
+}
+.result-row time {
+  font-size: 0.75rem;
+}
+.result-row > span {
+  font-weight: 700;
+}
+.result-row small {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.result-row > strong {
+  font-family: var(--display);
+  font-size: 2rem;
+  white-space: nowrap;
+}
+.result-row strong span {
+  color: #777;
+}
+.result-row > b {
+  font-size: 0.8rem;
+}
+.formation {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem 1.5rem;
+}
+.position-group {
+  min-width: 0;
+  align-self: start;
+}
+.position-title {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  min-height: 3rem;
+}
+.position-title h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.position-title > span {
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+.position-title small {
+  display: block;
+  color: #bbb;
+  font-size: 0.65rem;
+  margin-top: 0.25rem;
+}
+.position-group .player-card {
+  width: 100%;
+  display: block;
+}
+.position-group .portrait {
+  max-width: 190px;
+  margin: auto;
+}
+.position-group .portrait > strong {
+  font-size: 3rem;
+}
+.position-group .player-name {
+  min-height: 0;
+  font-size: 1.2rem;
+  padding: 0.6rem 0.75rem 0.3rem;
+}
+.measurements {
+  display: block;
+  font-size: 0.75rem;
+  padding: 0 0.75rem 0.6rem;
+  color: #ddd;
+}
+.photo-status {
+  display: block;
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  padding: 0 0.75rem 0.75rem;
+  color: #bbb;
+}
+.depth-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  margin: 1rem 0 0.5rem;
+  color: #ccc;
+}
+.depth-options {
+  overflow: visible;
+  border-bottom: 1px solid #777;
+  padding: 0 4px 4px 0;
+}
+.roster-option {
+  display: block;
+  width: 100%;
+  color: #eee;
+  background: #292929;
+  text-align: left;
+  border: 1px solid #555;
+  position: relative;
+  margin-bottom: 0.4rem;
+  min-height: 90px;
+}
+.roster-option .card-top {
+  font-size: 0.7rem;
+  border: 0;
+  padding: 0.4rem 0.65rem 0;
+}
+.roster-option .player-name {
+  font-size: 1rem;
+  padding: 0.2rem 0.65rem;
+  line-height: 1.3;
+}
+.roster-option .measurements {
+  font-size: 0.65rem;
+  padding: 0.2rem 0.65rem 0.5rem;
+}
+.roster-option .hover-detail {
+  justify-content: flex-start;
+  inset: auto 0 0;
+  min-height: 100%;
+  font-size: 0.75rem;
+  z-index: 3;
+}
+.roster-option:hover,
+.roster-option:focus-visible {
+  border-color: #fff;
+  z-index: 3;
+  outline-color: #fff;
+}
+.roster-option:hover .hover-detail,
+.roster-option:focus-visible .hover-detail {
+  opacity: 1;
+}
+.preview-dismissed .hover-detail {
+  opacity: 0 !important;
+}
+.complete-roster {
+  border-block: 1px solid #bbb;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+.complete-roster > summary {
+  font-weight: 700;
+  min-height: 44px;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+.roster-directory > details {
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+.roster-directory > details > summary {
+  font-size: 0.85rem;
+  cursor: pointer;
+  min-height: 44px;
+}
+.directory-name {
+  font-size: 2rem !important;
+}
+dialog {
+  width: min(680px, calc(100% - 2rem));
+}
+.photo-note {
+  font-size: 0.75rem;
+  color: #555;
+  background: #e5e5e5;
+  padding: 1rem;
+}
+.stats-title {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+.stat-category {
+  border-top: 1px solid #ccc;
+}
+.stat-category > summary {
+  padding: 1rem 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.stat-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 0.5rem 1.25rem !important;
+  margin: 0.5rem 0 1.5rem;
+}
+.stat-grid > div {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #ddd;
+  min-width: 0;
+}
+.stat-grid dt {
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+.stat-grid dd {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 700;
+}
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.bio dt {
+  font-size: 0.75rem;
+  color: #555;
+}
+.bio dd {
+  margin: 0;
+  font-weight: 700;
+}
+.profile-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+.no-stats {
+  padding: 1rem;
+  border: 1px solid #bbb;
+  font-size: 0.9rem;
+}
+@media (max-width: 1150px) {
+  .season-label {
+    display: none;
+  }
+  .formation {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .last-game {
+    padding: 2rem;
+  }
+  .results-section {
+    gap: 2rem;
+  }
+  .result-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .result-row > b {
+    text-align: right;
+  }
+}
+@media (max-width: 760px) {
+  .site-header {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .site-header nav {
+    width: auto;
+    gap: 1.25rem;
+    flex-wrap: nowrap;
+  }
+  .last-game {
+    height: auto;
+    min-height: 480px;
+    padding: 2.5rem 1.5rem;
+  }
+  .score-line > span {
+    font-size: 1.75rem;
+  }
+  .score-line > strong {
+    font-size: 5rem;
+  }
+  .results-section {
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .result-row {
+    grid-template-columns: 1fr auto;
+  }
+  .result-row > time {
+    grid-column: 1/-1;
+  }
+  .result-row > b {
+    display: none;
+  }
+  .results-section h2 {
+    font-size: 2.5rem;
+  }
+  .formation {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 0.75rem;
+  }
+  .position-group .portrait > strong {
+    font-size: 2.4rem;
+  }
+  .position-group .player-name {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.3rem;
+  }
+  .measurements {
+    font-size: 0.65rem;
+    padding-inline: 0.5rem;
+  }
+  .photo-status {
+    font-size: 0.45rem;
+    padding-inline: 0.5rem;
+  }
+  .position-title {
+    gap: 0.4rem;
+  }
+  .position-title h3 {
+    font-size: 1.5rem;
+  }
+  .position-title > span {
+    font-size: 0.65rem;
+  }
+  .position-title small {
+    font-size: 0.6rem;
+  }
+  .depth-label {
+    font-size: 0.5rem;
+  }
+  .roster-option .hover-detail {
+    font-size: 0.65rem;
+    padding: 0.5rem;
+  }
+  .roster-option .player-name {
+    font-size: 0.9rem;
+  }
+  .field-instruction {
+    font-size: 0.55rem;
+    line-height: 1.7;
+  }
+  .field-footer {
+    font-size: 0.7rem;
+  }
+  .field-footer span:last-child {
+    font-size: 0.55rem;
+  }
+  .source-note p {
+    font-size: 0.8rem;
+  }
+  .roster-directory > details {
+    padding: 0.75rem 0;
+  }
+  .roster-directory > details > summary {
+    font-size: 0.8rem;
+  }
+  .stat-grid {
+    gap: 0.5rem 0.75rem !important;
+  }
+  .stat-grid dt {
+    font-size: 0.7rem;
+  }
+  .brand {
+    font-size: 0.85rem;
+  }
+  .brand small {
+    font-size: 0.5rem;
+  }
+  .brand-mark {
+    font-size: 2.2rem;
   }
 }

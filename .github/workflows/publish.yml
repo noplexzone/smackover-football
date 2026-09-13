@@ -1,7 +1,7 @@
 name: Verify and publish develop
 on:
   push:
-    branches: [main]
+    branches: [main, feat/current-season-monochrome]
   workflow_dispatch:
 permissions:
   contents: read
@@ -46,14 +46,18 @@ jobs:
       - name: Smoke-test the actual nginx image
         run: |
           docker run -d --name smoke -p 8780:80 noplexzone/smackover-football:sha-${{ github.sha }}
-          for page in index roster schedule program gameday community; do
+          for page in index roster; do
             curl --fail --retry 8 --retry-all-errors --retry-connrefused --retry-delay 1 http://127.0.0.1:8780/$page.html -o /tmp/$page.html
             cmp dist/$page.html /tmp/$page.html
           done
           test "$(docker inspect smoke --format '{{ index .Config.Labels "org.opencontainers.image.revision" }}')" = "${{ github.sha }}"
           test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8780/nonexistent)" = 404
+          for page in schedule program gameday community; do
+            test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8780/$page.html)" = 404
+          done
           docker logs smoke
       - name: Publish only the verified acceptance image
+        if: github.ref == 'refs/heads/main'
         run: |
           docker push noplexzone/smackover-football:sha-${{ github.sha }}
           docker push noplexzone/smackover-football:develop

@@ -1,3 +1,3 @@
 # Product
 
-Unofficial football portfolio concept for fans and families. Primary job: explore the program and players; secondary job: find official game-day information. No CMS, accounts, personal contact information, invented news, ratings, or endorsements. Roster is a clearly labeled historical source sample, not the current team or a confirmed depth chart.
+Unofficial two-page Smackover Buckaroos portfolio concept. Home gives latest and previous2026 scores; roster covers all42 players, their published current measurements and reported season statistics. Full positional options—not invented depth ranking. No CMS, accounts, database, or automatic refresh. Snapshot timestamps visible. Current portraits require supplied/authorized photographs. No unrelated pages or green theme colors.

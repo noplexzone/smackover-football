@@ -1,13 +1,18 @@
-# Content provenance
+# Content provenance — current2026 revision
 
-This is an unofficial portfolio concept, not a current team directory or confirmed depth chart.
+The website is an unofficial portfolio concept, not an official depth chart. It now covers the current2026–27 MaxPreps roster rather than the historical Hooten’s sample (retained in git history).
 
-- Team name / district: https://smackover.net/
-- Black and white; championship years 1940, 1943, 1949; public roster reference: https://hootens.com/teams/smackover
-- Stadium address (1 Buckaroo Ln, Smackover, AR 71762): https://fearlessfriday.com/schools/smackover/
+- Roster: https://www.maxpreps.com/ar/smackover/smackover-buckaroos/football/roster/ — live browser verified42 rows, updated Sep10,2026 19:41GMT. All42 heights/weights and names retained as published. Current positions split on commas for grouping, not guessed from jersey numbers.
+- Stats: https://www.maxpreps.com/ar/smackover/smackover-buckaroos/football/stats/ — live source reports updated Sep6,2026 13:22GMT. Reused the verified2026 acquisition package and legacy-ID/career-ID crosswalk from the earlier authorized acquisition task. All855 player-stat cells across14 categories matched against source raw values;304 remain null.29 players have reported stats;13 have none, not zero.
+- Scores: MaxPreps game source URLs are attached to each row in src/data.json. Aug28 McGehee38–6; Sep3 Junction City55–12. Two completed games;93 points for18 against. Preserve source date even where another provider lists a conflicting date.
+- Source check: September12,2026. Not a live feed; no new n8n automation created. No database writes.
 
-The roster is a selected historical source sample with class years 2026–2028. Hooten's mixes seasons and duplicates numbers; do not imply the players are all currently enrolled or starters. Position group placement is illustrative, not coach-approved. Keep exact published names, including capitalization. Missing measurements/class remain “Not listed.” Micah Mcelroy's first source row is used; the duplicate with different positions is omitted. No claims of a full roster.
+## Photos and depth ordering
 
-No current schedule or coaching appointment is asserted because sources conflict. Links lead to source providers for current verification. News, tickets, sponsors, or game scores are not invented. Empty editorial areas explain that they await approved content.
+Live roster has no portraits. Profiles checked (Trason Parlor, Carter Walker, Connor Knight) supplied no player portrait. The listed MaxPreps gallery is from2022, not current. Do not harvest old or unidentifiable images. Labeled jersey illustrations remain temporarily; photo provision/approval is pending. Current, player-labeled photos with reuse permission are still needed.
 
-Artwork: original stadium/jersey SVG illustrations authored for this concept; not actual players, stadium photography, or official logos. No Madden artwork, NFL images, or student photos are distributed. Oswald font distributed from @fontsource/oswald under SIL Open Font License (license copied to assets).
+MaxPreps lists positions, not starter/backup ranks. Every listed option appears in its applicable position group, ordered by jersey number. The first displayed player is not asserted to be a starter. No left/right tackle split or depth ranking is invented.
+
+## Rights and artwork
+
+Caleb previously reported MaxPreps permission for2026 data acquisition; this does not establish photo licensing or commercial redistribution rights. Site remains an unofficial personal/LAN portfolio concept. No MaxPreps editorial text, gallery photos, or logos copied. Original stadium/jersey illustrations are now neutral grayscale; Oswald uses the included SIL Open Font License.
