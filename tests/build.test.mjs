@@ -112,7 +112,7 @@ for (const page of pages)
     assert.doesNotMatch(html, /(schedule|program|gameday|community)\.html/);
     for (const [, url] of html.matchAll(/(?:href|src)="([^"#]+)"/g))
       if (!url.startsWith("http"))
-        assert.ok((await stat("dist/" + url)).isFile());
+        assert.ok((await stat("dist/" + url.split("?")[0])).isFile());
   });
 test("only two built pages; retired routes absent", async () =>
   assert.deepEqual(

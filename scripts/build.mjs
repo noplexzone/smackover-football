@@ -1,7 +1,15 @@
 import { mkdir, readFile, writeFile, cp, unlink } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { jerseySvg } from "./jersey.mjs";
 const data = JSON.parse(await readFile("src/data.json", "utf8"));
 const { players } = data;
+const revisions = {};
+for (const file of ["styles.css", "roster.js"])
+  revisions[file] = createHash("sha256")
+    .update(await readFile("src/" + file))
+    .digest("hex")
+    .slice(0, 12);
+
 const esc = (value) =>
   String(value ?? "").replace(
     /[&<>"']/g,
@@ -25,6 +33,11 @@ for (const number of new Set([...players.map((p) => p.number), "6"])) {
   await writeFile(`dist/assets/jersey-home-${number}.svg`, jerseySvg(number));
 }
 await writeFile("dist/assets/jersey-away-6.svg", jerseySvg("6", "away"));
+for (const p of players)
+  await writeFile(
+    `dist/assets/jersey-back-${p.id}.svg`,
+    jerseySvg(p.number, "home", p.name.split(" ").at(-1)),
+  );
 for (const name of ["styles.css", "roster.js"])
   await cp("src/" + name, "dist/" + name);
 await cp(
@@ -44,7 +57,7 @@ const nav = [
   ["roster.html", "Roster"],
 ];
 function layout(file, title, body) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Unofficial Smackover Buckaroos football concept. 2026 results, full roster, measurements and published player statistics."><title>${title} — Smackover Football Concept</title><link rel="icon" href="assets/buckaroo-logo.png" type="image/png"><link rel="stylesheet" href="styles.css"><link rel="preload" href="assets/oswald.woff2" as="font" type="font/woff2" crossorigin>${file === "roster.html" ? '<script src="roster.js" defer></script>' : ""}</head><body class="${file === "roster.html" ? "roster-page" : "home-page"}"><a href="#main" class="skip">Skip to content</a><div class="concept-bar"><span>INDEPENDENT PORTFOLIO CONCEPT</span><span>NOT AN OFFICIAL SCHOOL WEBSITE</span></div><header class="site-header"><a class="brand" href="index.html" aria-label="Buckaroos concept home"><img class="brand-logo" src="assets/buckaroo-logo.png" width="48" height="48" alt="Buckaroo logo"><span>SMACKOVER<small>BUCKAROOS FOOTBALL</small></span></a><nav aria-label="Main navigation">${nav.map(([url, label]) => `<a href="${url}" ${url === file ? 'aria-current="page"' : ""}>${label}</a>`).join("")}</nav><span class="season-label">2026 / VARSITY</span><a class="district-link" href="https://smackover.net/">School district ↗</a></header><main id="main">${body}</main><footer><a class="brand" href="index.html"><img class="brand-logo" src="assets/buckaroo-logo.png" width="48" height="48" alt="Buckaroo logo"><span>SMACKOVER<small>BUCKAROOS FOOTBALL</small></span></a><p>Small town. All heart.<br><span>Smackover, Arkansas</span></p><p class="disclaimer">Independent portfolio concept. Not affiliated with or endorsed by the school. Results and roster sourced from MaxPreps; published statistics may be incomplete. No confirmed depth order. Reference-based illustrations do not imply endorsement.</p><a href="https://www.maxpreps.com/ar/smackover/smackover-buckaroos/football/">Team information on MaxPreps ↗</a></footer></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Unofficial Smackover Buckaroos football concept. 2026 results, full roster, measurements and published player statistics."><title>${title} — Smackover Football Concept</title><link rel="icon" href="assets/buckaroo-logo.png" type="image/png"><link rel="stylesheet" href="styles.css?v=${revisions["styles.css"]}"><link rel="preload" href="assets/oswald.woff2" as="font" type="font/woff2" crossorigin>${file === "roster.html" ? `<script src="roster.js?v=${revisions["roster.js"]}" defer></script>` : ""}</head><body class="${file === "roster.html" ? "roster-page" : "home-page"}"><a href="#main" class="skip">Skip to content</a><div class="concept-bar"><span>INDEPENDENT PORTFOLIO CONCEPT</span><span>NOT AN OFFICIAL SCHOOL WEBSITE</span></div><header class="site-header"><a class="brand" href="index.html" aria-label="Buckaroos concept home"><img class="brand-logo" src="assets/buckaroo-logo.png" width="48" height="48" alt="Buckaroo logo"><span>SMACKOVER<small>BUCKAROOS FOOTBALL</small></span></a><nav aria-label="Main navigation">${nav.map(([url, label]) => `<a href="${url}" ${url === file ? 'aria-current="page"' : ""}>${label}</a>`).join("")}</nav><span class="season-label">2026 / VARSITY</span><a class="district-link" href="https://smackover.net/">School district ↗</a></header><main id="main">${body}</main><footer><a class="brand" href="index.html"><img class="brand-logo" src="assets/buckaroo-logo.png" width="48" height="48" alt="Buckaroo logo"><span>SMACKOVER<small>BUCKAROOS FOOTBALL</small></span></a><p>Small town. All heart.<br><span>Smackover, Arkansas</span></p><p class="disclaimer">Independent portfolio concept. Not affiliated with or endorsed by the school. Results and roster sourced from MaxPreps; published statistics may be incomplete. No confirmed depth order. Reference-based illustrations do not imply endorsement.</p><a href="https://www.maxpreps.com/ar/smackover/smackover-buckaroos/football/">Team information on MaxPreps ↗</a></footer></body></html>`;
 }
 const games = [...data.games].sort((a, b) => b.date.localeCompare(a.date));
 const latest = games[0];
@@ -138,7 +151,7 @@ function quickStats(p) {
     : "<span>Open profile for reported season stats.</span>";
 }
 function playerCard(p, index) {
-  return `<button class="stack-card${index ? " stack-backup" : " stack-front is-active"}" data-id="${esc(p.id)}" aria-haspopup="dialog" aria-label="View ${esc(p.name)}, number ${esc(p.number)}"><img class="stack-jersey" src="assets/jersey-home-${esc(p.number)}.svg" width="300" height="280" alt="" aria-hidden="true"><span class="stack-strip"><b>#${esc(p.number)}</b><span>${esc(p.name)}</span></span><template class="preview-source"><b>${esc(p.name)}</b><span>#${esc(p.number)} · ${p.positions.map(esc).join(" / ")}</span><span>${esc(p.grade)} · ${esc(p.height)} · ${esc(p.weight)}</span>${quickStats(p)}<span>Open full profile ↗</span></template></button>`;
+  return `<button class="stack-card${index ? " stack-backup" : " stack-front is-active"}" data-id="${esc(p.id)}" aria-haspopup="dialog" aria-label="View ${esc(p.name)}, number ${esc(p.number)}"><span class="stack-art" aria-hidden="true"><img class="stack-jersey" src="assets/jersey-back-${esc(p.id)}.svg" width="300" height="280" alt=""></span><span class="stack-strip"><b>#${esc(p.number)}</b><span>${esc(p.name)}</span></span><template class="preview-source"><b>${esc(p.name)}</b><span>#${esc(p.number)} · ${p.positions.map(esc).join(" / ")}</span><span>${esc(p.grade)} · ${esc(p.height)} · ${esc(p.weight)}</span>${quickStats(p)}<span>Open full profile ↗</span></template></button>`;
 }
 function detail(p) {
   const categories = [...new Set(p.stats.map((s) => s.category))];

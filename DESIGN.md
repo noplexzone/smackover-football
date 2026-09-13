@@ -11,3 +11,6 @@ Roster (Operate): nonoverlapping vertical flex accordions. First card is fully e
 Exact offense top OT OG C OG OT TE; bottom WR HB QB FB WR. Defense top S OLB ILB ILB OLB S; bottom CB DE DT DE CB. Presentation mappings OL→OT, RB→HB, NG→DT, DB→CB, MLB→ILB never mutate source profiles. Numeric order and pool splitting are illustrative, not confirmed depth ranking. Fit the complete field at 1366×768 and 390×844. Preserve the no-JS full 42-player directory and independent-concept disclaimer.
 
 Impeccable: detector-only integration retained; narrow layout/a11y correction, not a redesign.
+
+## Contained back-view roster art
+Player-card jersey artwork is bounded by a dedicated fixed-height, clipped art area. Only the active card exposes artwork. Jerseys are rear views with each sourced surname above the number; homepage uniform references remain front views. CSS and JS URLs are content-versioned to avoid mixing old layout code with new markup.

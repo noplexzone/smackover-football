@@ -229,3 +229,50 @@ for (const viewport of [
     }
   });
 }
+
+test("jersey artwork is contained, rear-facing and hidden on strips", async ({
+  page,
+}) => {
+  for (const viewport of [
+    { width: 1366, height: 768 },
+    { width: 390, height: 844 },
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.goto("/roster.html");
+    for (const unit of ["offense", "defense", "special"]) {
+      await page.locator(`[data-group="${unit}"]`).click();
+      const cards = await page
+        .locator(`.unit-formation[data-unit="${unit}"] .stack-card`)
+        .all();
+      for (const card of cards) {
+        await card.focus();
+        await page.keyboard.press("Escape");
+        const contained = await card.evaluate((b) => {
+          const r = b.getBoundingClientRect(),
+            a = b.querySelector(".stack-art").getBoundingClientRect(),
+            i = b.querySelector("img").getBoundingClientRect();
+          return (
+            i.width > 0 &&
+            i.height > 0 &&
+            i.x >= a.x &&
+            i.y >= a.y &&
+            i.right <= a.right &&
+            i.bottom <= a.bottom &&
+            a.x >= r.x &&
+            a.y >= r.y &&
+            a.right <= r.right &&
+            a.bottom <= r.bottom &&
+            b.querySelector("img").naturalWidth > 0
+          );
+        });
+        expect(contained).toBe(true);
+      }
+      for (const art of await page
+        .locator(
+          `.unit-formation[data-unit="${unit}"] .stack-card:not(.is-active) .stack-art`,
+        )
+        .all())
+        await expect(art).toBeHidden();
+    }
+  }
+});

@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+- Contain jersey art inside active cards; show back-view surnames above player numbers.
+- Content-version CSS/JS and revalidate preview assets to prevent mixed-version cached layouts.
+
 ### Added
 - Initial unofficial Buckaroos portfolio concept and responsive formation roster.
 

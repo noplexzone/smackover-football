@@ -8,7 +8,7 @@ test("reference-based jerseys replace crops and use every player's number", asyn
   assert.doesNotMatch(home + roster, /uniform-(home|away)\.webp/);
   assert.match(home, /Reference-based illustrations/i);
   for (const player of data.players) {
-    assert.ok(roster.includes(`src="assets/jersey-home-${player.number}.svg"`));
+    assert.ok(roster.includes(`src="assets/jersey-back-${player.id}.svg"`));
     const svg = await readFile(
       `dist/assets/jersey-home-${player.number}.svg`,
       "utf8",

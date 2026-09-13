@@ -15,3 +15,6 @@
 ## Publication and deployment
 
 CI independently runs formatter, build, unit tests, Impeccable, Playwright, and actual nginx image smoke before publishing `develop` and the immutable commit image. Verify the final run and registry revision before handing off. Publishing this revision does not itself replace the existing LAN preview; container replacement requires Caleb's explicit approval.
+
+## Back-view containment correction
+Ten unit tests and ten browser tests passed, including every active image/art container inside its card bounds at desktop and phone sizes. All 42 surnames and numbers verified in generated rear-view SVGs; SVG name text is escaped. Desktop/mobile screenshots show no ghost/overflow artwork. Sample PARLOR #6 rear view visually checked. CSS/JS content revision URLs and nginx no-cache revalidation prevent stale mixed-version layout assets. Supplied screenshot defect was not reproduced in a fresh browser, so stale assets remain a suspected cause, not a proven diagnosis.
