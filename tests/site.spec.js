@@ -146,6 +146,13 @@ test("preview is hoverable outside stack, unclipped and dismissible", async ({
   await page.goto("/roster.html");
   const card = page.locator('[data-position="QB"] .stack-backup');
   await card.scrollIntoViewIfNeeded();
+  // Flush the scroll event (which dismisses previews) before pointer entry.
+  await page.evaluate(
+    () =>
+      new Promise((resolve) =>
+        requestAnimationFrame(() => requestAnimationFrame(resolve)),
+      ),
+  );
   const box = await card.boundingBox();
   await page.mouse.move(box.x + box.width / 2, box.y + box.height - 10);
   const preview = page.locator("#player-preview");
