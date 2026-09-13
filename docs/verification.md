@@ -1,14 +1,12 @@
-# First-draft verification
+# Current-season revision verification
 
-- Local build: six pages, 17 unique historical-source player profiles.
-- Unit/resource suite: 7 passing tests; local links and assets exist.
-- Prettier check and Impeccable 4.1.0 detector: passing, no findings.
-- Browser: real Chromium/CDP, desktop 1440px and mobile 390px. Offense/defense/special filters and native dialog inspected. Desktop and mobile screenshots reviewed; mobile navigation wrapping corrected and visually confirmed.
-- GitHub Actions at commit 3b15555: all five Playwright tests passed, including keyboard/hover/dialog, a real touch-enabled tap context, reduced motion, resources/reflow, and no-JavaScript fallback.
-- First CI failure: noscript content was absent in the disabled-JavaScript browser check. Replaced with progressive enhancement: visible fallback, controls enabled only after script loads. Regression passed.
-- Local Playwright browser installation timed out; browser tests run on the Ubuntu CI runner, not claimed as local.
-- Final CI additionally builds and runs the exact nginx image, compares all six HTTP responses to built files, checks missing route 404 and revision label, then publishes develop and sha only.
-- No Unraid container created, replaced, restarted, or modified. Existing smackover-db not used. Deployment requires separate approval.
-
-## Content limitations
-Historical source sample only; no verified current roster/depth chart, live schedule, current coach appointments, real player photographs, ticket sales, sponsor endorsements, or live news. Original jersey/stadium illustrations and licensed locally hosted font.
+- Exactly two built pages: Home and Roster. Retired Schedule, Program, Game Day and Community routes removed and tested404 in the actual nginx image.
+- Five local unit/resource/data/palette tests pass. Red phase failed against the former six-page historical build before implementation.
+- Seven Chromium browser tests pass in GitHub Actions run34732495179 for source commitf1ada478d4e2b4c00c4e60b76a78ae4cd1b7ec73. Includes actual `hasTouch: true` tap without click fallback, keyboard dialog/focus/Escape, hoverable expanded previews, no-JS42-player directory, results and retired routes, and390/1440px layouts.
+- Impeccable detector and Prettier pass. CSS/SVG color test checks neutral grayscale palette.
+- Live browser confirms42 current MaxPreps roster rows, current stats update date, and2completed games. All855 player-stat cells independently compared with original raw acquisition values after verified identity crosswalk; missing values stay unreported.
+- Desktop/mobile screenshots inspected. Removed nested scrolling from position options after visual review found partly clipped final rows. Confirmation screenshot and DOM scrollHeight/clientHeight show all options exposed.
+- Independent scoped review found one material issue: expanded compact previews were not hoverable. Corrected visible overlay pointer events and Escape dismissal; dedicated browser regression passes. No other material finding reported.
+- MaxPreps currently reports latest Sep3 Junction City55–12; prior Aug28 McGehee38–6. Snapshot source dates shown, not a live scoreboard.
+- Current player photos remain unavailable. Illustrations are explicitly labeled, not photos. No confirmed starter/backup depth order is asserted.
+- Local live container remains on the first draft. Replacement request has no verified approval yet; no running container changed by this revision.
