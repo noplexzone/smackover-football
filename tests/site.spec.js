@@ -3,7 +3,7 @@ for (const viewport of [
   { width: 1366, height: 768 },
   { width: 390, height: 844 },
 ]) {
-  test(`compact full formations fit ${viewport.width}x${viewport.height}`, async ({
+  test(`two formation rows remain reachable at ${viewport.width}x${viewport.height}`, async ({
     page,
   }) => {
     await page.setViewportSize(viewport);
@@ -21,8 +21,7 @@ for (const viewport of [
     }
     for (const unit of ["offense", "defense", "special"]) {
       await page.locator(`[data-group="${unit}"]`).click();
-      const field = await page.locator(".field").boundingBox();
-      expect(field.y + field.height).toBeLessThanOrEqual(viewport.height);
+      // Readability takes precedence over fitting the whole field vertically.
       const rows = page.locator(
         `.unit-formation[data-unit="${unit}"] .formation-row`,
       );
@@ -35,18 +34,14 @@ for (const viewport of [
             return {
               height: stack.getBoundingClientRect().height,
               count: cards.length,
-              reachable: cards.every((card) => {
-                const r = card.getBoundingClientRect();
-                return card.contains(
-                  document.elementFromPoint(r.x + r.width / 2, r.bottom - 10),
-                );
-              }),
             };
           }),
         );
       for (const stack of geometry) {
-        expect(stack.height).toBe(64 + 24 * (stack.count - 1));
-        expect(stack.reachable).toBe(true);
+        expect(stack.height).toBe(
+          (viewport.width > 760 ? 184 : 100) + 24 * (stack.count - 1),
+        );
+        // Offscreen rows are reached by normal document scrolling.
       }
       expect(
         await page
@@ -114,6 +109,7 @@ test("touch exposes every backup strip", async ({ browser }) => {
       const expectedName = (await card.getAttribute("aria-label")).match(
         /^View (.*), number /,
       )[1];
+      await card.scrollIntoViewIfNeeded();
       const box = await card.boundingBox();
       await page.touchscreen.tap(
         box.x + box.width / 2,
@@ -149,6 +145,7 @@ test("preview is hoverable outside stack, unclipped and dismissible", async ({
   await page.setViewportSize({ width: 1366, height: 768 });
   await page.goto("/roster.html");
   const card = page.locator('[data-position="QB"] .stack-backup');
+  await card.scrollIntoViewIfNeeded();
   const box = await card.boundingBox();
   await page.mouse.move(box.x + box.width / 2, box.y + box.height - 10);
   const preview = page.locator("#player-preview");
@@ -194,10 +191,12 @@ for (const viewport of [
         }),
       );
       expect((await stack.boundingBox()).height).toBe(
-        64 + 24 * (geometry.length - 1),
+        (viewport.width > 760 ? 184 : 100) + 24 * (geometry.length - 1),
       );
       for (const [index, card] of geometry.entries()) {
-        expect(card.height).toBe(index === activeIndex ? 64 : 24);
+        expect(card.height).toBe(
+          index === activeIndex ? (viewport.width > 760 ? 184 : 100) : 24,
+        );
         expect(card.exposed).toBe(true);
         if (index) expect(card.top).toBe(geometry[index - 1].bottom);
       }
@@ -207,6 +206,8 @@ for (const viewport of [
       for (const stack of await page
         .locator(`[data-unit="${unit}"] .card-stack`)
         .all()) {
+        await stack.scrollIntoViewIfNeeded();
+        await page.mouse.move(0, 0);
         await assertStack(stack, 0);
         const cards = await stack.locator(".stack-card").all();
         for (const [index, card] of cards.entries()) {
@@ -223,6 +224,7 @@ for (const viewport of [
           await page.mouse.move(0, 0);
           await assertStack(stack, index);
           await page.locator(`[data-group="${unit}"]`).focus();
+          await stack.scrollIntoViewIfNeeded();
           await assertStack(stack, 0);
         }
       }
@@ -266,6 +268,13 @@ test("jersey artwork is contained, rear-facing and hidden on strips", async ({
           );
         });
         expect(contained).toBe(true);
+        const paintedHeight = await card.locator("img").evaluate((img) => {
+          const r = img.getBoundingClientRect();
+          return Math.min(r.height, (r.width * 280) / 300);
+        });
+        expect(paintedHeight).toBeGreaterThanOrEqual(
+          viewport.width > 760 ? 130 : 50,
+        );
       }
       for (const art of await page
         .locator(

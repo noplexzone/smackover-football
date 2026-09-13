@@ -1469,7 +1469,7 @@ dialog {
   }
 }
 
-/* Compact formation: one 64px card, then 24px exposed name strips. */
+/* Readable active jerseys with compact 24px sibling name strips. */
 .brand-logo {
   width: 48px;
   height: 48px;
@@ -1626,9 +1626,13 @@ dialog {
   color: #111;
   text-align: left;
 }
+.card-stack {
+  --active-card-height: 184px;
+  --jersey-art-height: 160px;
+}
 .stack-card.is-active {
-  height: 64px;
-  flex-basis: 64px;
+  height: var(--active-card-height);
+  flex-basis: var(--active-card-height);
 }
 .stack-card:not(.is-active) {
   background: #ccc;
@@ -1637,8 +1641,8 @@ dialog {
   display: none;
   position: relative;
   width: 100%;
-  height: 40px;
-  flex: 0 0 40px;
+  height: var(--jersey-art-height);
+  flex: 0 0 var(--jersey-art-height);
   overflow: hidden;
   padding: 2px;
 }
@@ -1745,6 +1749,13 @@ dialog {
   }
   .roster-page {
     --space: 8px;
+  }
+  .card-stack {
+    --active-card-height: 100px;
+    --jersey-art-height: 76px;
+  }
+  .stack-art {
+    padding: 0;
   }
   .roster-page .concept-bar {
     font-size: 0.45rem;

@@ -1,20 +1,17 @@
-# Jersey illustrations and active-card acceptance
+# Readable active-card acceptance
 
-## Verified locally
+## Current sizing correction
 
-- Built two pages; all 42 roster profiles and source statistics remain unchanged (`src/data.json` has no diff).
-- Eight unit/data/resource tests and nine Playwright browser tests passed. Formatter and Impeccable detector passed.
-- The first card is fully exposed by default. Hovering or keyboard-focusing another card expands that card to 64px; other cards become 24px strips. Total stack height remains unchanged. Leaving the stack restores its first card unless a card retains keyboard focus.
-- Desktop 1366×768 and phone 390×844 screenshots show both formation rows without horizontal overflow. Offense field bottoms measured 753.3125px and 744.75px respectively.
-- A separate real-mouse CDP sweep exercised every card in offense, defense, and special teams at both viewport widths without dismissing the preview between cards. Every card became active and every sibling strip remained hit-test reachable while the preview was visible.
-- Browser tests cover native dialog Escape/focus restoration, real touch taps on every backup strip, no-JavaScript access to all 42 profiles, complete schedule, and bounded hover previews.
-- Homepage uses newly illustrated white/away and black/home jerseys, not the supplied promotional photo crops. Each roster card uses its own numbered black jersey illustration. The original field photograph and district logo remain.
-- Away lettering uses embedded Allura script font with its license included in generated assets, avoiding platform-dependent cursive fallback. Desktop/mobile visual inspection confirmed the script, both jersey silhouettes, and numbered cards render without clipping.
-- The illustrations are reference-based interpretations, not exact replica claims. Uncertain brand marks were omitted. No player data, depth rankings, or individual portraits were invented.
+- Default-first, hovered and keyboard-focused cards share one enlarged size: 184px desktop / 100px phone. Siblings remain 24px strips, with constant total stack height and no overlapping cards.
+- Art regions are 160px desktop / 76px phone, clipped inside the card. At 1366px the contained SVG paints at 156px high (previously 36px), with about 11px surname lettering. At 390px the six-column formation limits the painted SVG to about 52px high; numbers are visible, but jersey surnames are not reliably readable. Full names remain accessible by touch/dialog and the complete directory. This is not a claim of desktop-sized phone typography.
+- Readability supersedes the former whole-field viewport-height requirement. Normal document scrolling is intentional; exact two offense/defense rows and no horizontal overflow are retained.
+- Regression RED: all three new painted-size tests failed against the previous CSS (36px painted height). GREEN: 10 unit tests and 13 Playwright tests passed after enlargement and scroll-aware interaction checks.
+- Tests check actual object-fit dimensions, not only image element bounds; every active jersey remains contained. All 42 sourced rear-view surnames/numbers, exact position rows, no-JS directory, real touch on backup strips, mouse/keyboard activation, preview dismissal, and native modal/focus restoration remain covered. Source data and homepage artwork are unchanged.
+- `npm run build`, `npm test`, `npm run test:e2e`, `npm run format:check`, and `npm run design:check` are the required gates. There is no separate lint/typecheck script in this static JS project.
+- Bounded visual inspection: `.preview/sizing-1366.png`, `.preview/sizing-390.png`, and focused backup crops `.preview/sizing-active-1366.png`, `.preview/sizing-active-390.png`. Desktop surnames/numbers legible; no card overlap or artwork escape. Phone numbers visible, surname limitation documented above. Browser capture reported no page errors or failed requests.
 
-## Publication and deployment
+## Publication and LAN preview
 
-CI independently runs formatter, build, unit tests, Impeccable, Playwright, and actual nginx image smoke before publishing `develop` and the immutable commit image. Verify the final run and registry revision before handing off. Publishing this revision does not itself replace the existing LAN preview; container replacement requires Caleb's explicit approval.
+CI independently runs formatter, build, unit tests, Impeccable, Playwright, and actual nginx image smoke before publishing `develop` and the immutable commit image. Verify the final run, manifest digest and OCI revision before deployment. Caleb authorizes automatic replacement of `smackover-football-preview` after verified builds; retain the stopped previous container for rollback and preserve live runtime config. Verify HTTP pages/assets byte-for-byte and the running image revision; record deployment evidence in `/mnt/user/appdata/dev/CONTAINERS.md`.
 
-## Back-view containment correction
-Ten unit tests and ten browser tests passed, including every active image/art container inside its card bounds at desktop and phone sizes. All 42 surnames and numbers verified in generated rear-view SVGs; SVG name text is escaped. Desktop/mobile screenshots show no ghost/overflow artwork. Sample PARLOR #6 rear view visually checked. CSS/JS content revision URLs and nginx no-cache revalidation prevent stale mixed-version layout assets. Supplied screenshot defect was not reproduced in a fresh browser, so stale assets remain a suspected cause, not a proven diagnosis.
+CSS/JS URLs remain content-versioned, with nginx revalidation to avoid mixed cached layout assets. Homepage front-view illustrated uniforms remain unchanged; roster art is rear-view and reference-based, not an exact replica or player photograph.

@@ -9,6 +9,7 @@
 - Initial unofficial Buckaroos portfolio concept and responsive formation roster.
 
 ### Changed
+- Enlarged active/default-first roster cards to 184px desktop and 100px phone, with 160px/76px contained rear-jersey art regions. Hover/focus shares the enlarged size; siblings remain compact 24px strips. Prioritize readable desktop surnames over fitting the entire field vertically, retaining exact formation rows and no horizontal overflow.
 - Corrected stacks to nonoverlapping accordions: first card fully visible by default, hover/focus expands any card at fixed total height, and all strips remain reachable with previews outside the formation.
 - Restored illustrated uniforms on Home and every numbered player card. Black BUCKAROOS/home and white script Smackover/away are reference-based artwork, not promotional photo crops or exact replicas.
 - Compact exact two-row offense/defense formations with compact player stacks and presentation-only position mappings.
