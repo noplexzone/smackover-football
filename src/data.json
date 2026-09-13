@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "seasonLabel": "2026\u201327",
+  "seasonLabel": "2026–27",
   "fetchedAt": "2026-09-13T01:54:51Z",
   "rosterSource": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/football/roster/",
   "statsSource": "https://www.maxpreps.com/ar/smackover/smackover-buckaroos/football/stats/",
@@ -4876,5 +4876,107 @@
   ],
   "checkedAt": "2026-09-12",
   "rosterUpdatedAt": "2026-09-10T19:41:00Z",
-  "statsUpdatedAt": "2026-09-06T13:22:00Z"
+  "statsUpdatedAt": "2026-09-06T13:22:00Z",
+  "schedule": [
+    {
+      "date": "2026-08-28",
+      "opponent": "McGehee",
+      "homeAway": "home",
+      "time": "7:00pm",
+      "status": "final",
+      "pointsFor": 38,
+      "pointsAgainst": 6,
+      "source": "https://www.maxpreps.com/ar/football/game/mcgehee-vs-smackover/8-28-2026/?c=8426d705-f1c5-44c0-acd1-b04ee2e9529a"
+    },
+    {
+      "date": "2026-09-03",
+      "opponent": "Junction City",
+      "homeAway": "away",
+      "time": "7:00pm",
+      "status": "final",
+      "pointsFor": 55,
+      "pointsAgainst": 12,
+      "source": "https://www.maxpreps.com/ar/football/game/junction-city-vs-smackover/9-3-2026/?c=eebc2f5f-8e20-47a2-8812-e974e5c1a592"
+    },
+    {
+      "date": "2026-09-18",
+      "opponent": "Drew Central",
+      "homeAway": "away",
+      "time": "7:00pm",
+      "status": "scheduled",
+      "pointsFor": null,
+      "pointsAgainst": null,
+      "source": "https://www.maxpreps.com/ar/football/game/drew-central-monticello-vs-smackover/9-18-2026/?c=4baa68e8-bf49-4f3d-a252-509b8c049bac"
+    },
+    {
+      "date": "2026-09-25",
+      "opponent": "Harmony Grove",
+      "homeAway": "away",
+      "time": "7:00pm",
+      "status": "scheduled",
+      "pointsFor": null,
+      "pointsAgainst": null,
+      "source": "https://www.maxpreps.com/ar/football/game/harmony-grove-camden-vs-smackover/9-25-2026/?c=26829b81-c7bc-454e-bfc0-163a4976637b"
+    },
+    {
+      "date": "2026-10-02",
+      "opponent": "Bismarck",
+      "homeAway": "home",
+      "time": "7:00pm",
+      "status": "scheduled",
+      "pointsFor": null,
+      "pointsAgainst": null,
+      "source": "https://www.maxpreps.com/ar/football/game/bismarck-vs-smackover/10-2-2026/?c=5cf45243-ec82-4963-a078-ab1649863aa3"
+    },
+    {
+      "date": "2026-10-09",
+      "opponent": "Centerpoint",
+      "homeAway": "away",
+      "time": "7:00pm",
+      "status": "scheduled",
+      "pointsFor": null,
+      "pointsAgainst": null,
+      "source": "https://www.maxpreps.com/ar/football/game/centerpoint-amity-vs-smackover/10-9-2026/?c=40ece0be-b7d9-48c0-b1de-ff28622d66c8"
+    },
+    {
+      "date": "2026-10-16",
+      "opponent": "Horatio",
+      "homeAway": "home",
+      "time": "7:00pm",
+      "status": "scheduled",
+      "pointsFor": null,
+      "pointsAgainst": null,
+      "source": "https://www.maxpreps.com/ar/football/game/horatio-vs-smackover/10-16-2026/?c=8b7a4a6d-bcae-45e9-9787-4cff8996afea"
+    },
+    {
+      "date": "2026-10-23",
+      "opponent": "Parkers Chapel",
+      "homeAway": "away",
+      "time": "7:00pm",
+      "status": "scheduled",
+      "pointsFor": null,
+      "pointsAgainst": null,
+      "source": "https://www.maxpreps.com/ar/football/game/parkers-chapel-el-dorado-vs-smackover/10-23-2026/?c=940571d2-5b7e-464f-a117-38ac111c62ba"
+    },
+    {
+      "date": "2026-10-30",
+      "opponent": "Prescott",
+      "homeAway": "away",
+      "time": "5:00pm",
+      "status": "scheduled",
+      "pointsFor": null,
+      "pointsAgainst": null,
+      "source": "https://www.maxpreps.com/ar/football/game/prescott-vs-smackover/10-30-2026/?c=bf7dc7e6-173c-44c5-856f-1183a97ff4ea"
+    },
+    {
+      "date": "2026-11-06",
+      "opponent": "Cossatot River",
+      "homeAway": "home",
+      "time": "7:00pm",
+      "status": "scheduled",
+      "pointsFor": null,
+      "pointsAgainst": null,
+      "source": "https://www.maxpreps.com/ar/football/game/cossatot-river-cove-vs-smackover/11-6-2026/?c=5104c7af-1998-4dd8-8392-3833e50439a5"
+    }
+  ]
 }

@@ -6,6 +6,9 @@
 - Initial unofficial Buckaroos portfolio concept and responsive formation roster.
 
 ### Changed
+- Compact exact two-row offense/defense formations with overlapping player stacks and presentation-only position mappings.
+- Full source schedule, including all upcoming games and kickoffs.
+- Real district Buckaroo logo and user-supplied grayscale field/uniform photos replace homepage placeholders.
 - Reduced site to Home and Roster; removed retired pages from built artifacts.
 - Strict neutral black/white/grey palette, including artwork and focus states.
 - Replaced historical sample with all42 current MaxPreps roster profiles, heights and weights.

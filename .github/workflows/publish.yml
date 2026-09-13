@@ -1,7 +1,7 @@
 name: Verify and publish develop
 on:
   push:
-    branches: [main, feat/current-season-monochrome]
+    branches: [main, feat/current-season-monochrome, feat/compact-formations-media]
   workflow_dispatch:
 permissions:
   contents: read
@@ -54,6 +54,10 @@ jobs:
           test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8780/nonexistent)" = 404
           for page in schedule program gameday community; do
             test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8780/$page.html)" = 404
+          done
+          for asset in styles.css roster.js assets/buckaroo-logo.png assets/field.webp assets/uniform-away.webp assets/uniform-home.webp; do
+            curl --fail http://127.0.0.1:8780/$asset -o /tmp/check-asset
+            cmp dist/$asset /tmp/check-asset
           done
           docker logs smoke
       - name: Publish only the verified acceptance image

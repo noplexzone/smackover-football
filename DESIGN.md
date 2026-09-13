@@ -1,7 +1,9 @@
 # Design
 
-Approved revision: strictly black, white and grey. No green tints or chromatic accents in CSS, jersey artwork, stadium artwork, hover states or focus rings. Locally hosted Oswald bold plus system sans. Two pages only: Home and Roster.
+Strictly black, white and grey in CSS, artwork and grayscale supplied media. Oswald bold with system sans. Two pages: Home and Roster. Real Smackover-Norphlet district horse/rider-and-horseshoe mark replaces the invented B-star.
 
-Home: editorial hero plus latest reported final score, prior2026 results, full-roster link. Roster: all42 current players grouped by position, each group with a prominent first numeric jersey and all additional options underneath. Ordering by jersey number is explicitly not starter/backup rank. Hover and keyboard focus show published details; click/tap opens full season stats. Same player can appear in multiple units. Full accessible roster directory preserves data without JavaScript.
+Home: latest reported final over the supplied field photograph, full chronological10game2026schedule with2finals/8upcoming, and white/away + black/home cropped promotional uniform references. All media is local; source dimensions retained, so small supplied field/homeuniform images are not presented as high resolution.
 
-Photography remains a content gap: no current portraits in inspected MaxPreps profiles and only a2022 photo gallery. Use neutral illustrations explicitly labeled until authorized player-labeled current images arrive; never pass off illustrations as photos.
+Roster: compact two-row overlapping positional stacks. Exact offense top OT OG C OG OT TE; bottom WR HB QB FB WR. Defense top S OLB ILB ILB OLB S; bottom CB DE DT DE CB. Presentation mappings OL->OT, RB->HB, NG->DT, DB->CB never mutate source profile positions. Numeric order and pool splitting are illustrative, not confirmed depth ranking. Every additional player must remain pointer/touch/keyboard reachable without nested scroll containers; full profiles may scroll in a native dialog. Preserve no-JS full42player directory.
+
+Uniform-reference photos are supplied promotional compositions, not complete portrait coverage or sponsorship endorsements. Do not reuse one player's likeness for otherplayers. Independent-concept disclaimer remains.

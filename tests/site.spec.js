@@ -1,7 +1,12 @@
 import { test, expect } from "@playwright/test";
-for (const width of [390, 1440])
-  test(`two-page navigation and reflow ${width}`, async ({ page }) => {
-    await page.setViewportSize({ width, height: 1000 });
+for (const viewport of [
+  { width: 1366, height: 768 },
+  { width: 390, height: 844 },
+]) {
+  test(`compact full formations fit ${viewport.width}x${viewport.height}`, async ({
+    page,
+  }) => {
+    await page.setViewportSize(viewport);
     const errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
     page.on("response", (r) => {
@@ -10,93 +15,119 @@ for (const width of [390, 1440])
     for (const route of ["index", "roster"]) {
       await page.goto(`/${route}.html`);
       await expect(page.locator("nav a")).toHaveCount(2);
-      await expect(page.locator("h1")).toBeVisible();
       expect(
-        await page.evaluate(
-          () => document.documentElement.scrollWidth <= innerWidth,
-        ),
+        await page.evaluate(() => document.documentElement.scrollWidth),
+      ).toBeLessThanOrEqual(viewport.width);
+    }
+    for (const unit of ["offense", "defense", "special"]) {
+      await page.locator(`[data-group="${unit}"]`).click();
+      const field = await page.locator(".field").boundingBox();
+      expect(field.y + field.height).toBeLessThanOrEqual(viewport.height);
+      const rows = page.locator(
+        `.unit-formation[data-unit="${unit}"] .formation-row`,
+      );
+      await expect(rows).toHaveCount(unit === "special" ? 1 : 2);
+      const geometry = await page
+        .locator(`.unit-formation[data-unit="${unit}"] .card-stack`)
+        .evaluateAll((stacks) =>
+          stacks.map((stack) => {
+            const cards = [...stack.querySelectorAll("button")];
+            return {
+              height: stack.getBoundingClientRect().height,
+              count: cards.length,
+              reachable: cards.every((card) => {
+                const r = card.getBoundingClientRect();
+                return card.contains(
+                  document.elementFromPoint(r.x + r.width / 2, r.bottom - 10),
+                );
+              }),
+            };
+          }),
+        );
+      for (const stack of geometry) {
+        expect(stack.height).toBe(64 + 24 * (stack.count - 1));
+        expect(stack.reachable).toBe(true);
+      }
+      expect(
+        await page
+          .locator(
+            ".field, .formation, .formation-row, .position-group, .card-stack",
+          )
+          .evaluateAll((elements) =>
+            elements.every(
+              (e) =>
+                !["auto", "scroll"].includes(getComputedStyle(e).overflowY),
+            ),
+          ),
       ).toBe(true);
     }
     expect(errors).toEqual([]);
   });
-test("latest and previous results, retired pages404", async ({ page }) => {
+}
+test("all ten schedule rows distinguish future games from finals", async ({
+  page,
+}) => {
   await page.goto("/");
   await expect(page.locator(".last-game")).toContainText("JUNCTION CITY");
   await expect(page.locator(".score-line").first()).toContainText("55");
-  await expect(page.locator(".result-row")).toContainText("McGehee");
-  await expect(page.locator(".result-row")).toContainText("38");
-  for (const route of ["schedule", "program", "gameday", "community"]) {
-    const response = await page.request.get(`/${route}.html`);
-    expect(response.status()).toBe(404);
+  await expect(page.locator(".result-row")).toHaveCount(10);
+  await expect(page.locator('[data-status="final"]')).toHaveCount(2);
+  await expect(page.locator('[data-status="scheduled"]')).toHaveCount(8);
+  await expect(
+    page.locator('[data-status="scheduled"] .schedule-score'),
+  ).toHaveCount(0);
+  for (const row of await page.locator('[data-status="scheduled"]').all()) {
+    await expect(row.locator("strong")).toHaveText(/\d{1,2}:\d{2}pm/);
+    await expect(row).toContainText("Scheduled");
   }
 });
-test("all positional options, hover, keyboard and full player stats", async ({
+test("keyboard full details, native Escape and focus restore", async ({
   page,
 }) => {
   await page.goto("/roster.html");
-  const qb = page.locator('[data-position="QB"]');
-  await expect(qb.locator("[data-id]")).toHaveCount(2);
-  const main = qb.locator(".player-card");
-  await expect(main).toContainText("Trason Parlor");
-  const backup = qb.locator(".roster-option");
-  await expect(backup).toContainText("Derrick Goodwin");
-  await main.hover();
-  await expect(main.locator(".hover-detail")).toHaveCSS("opacity", "1");
-  await page.keyboard.press("Escape");
-  await expect(main.locator(".hover-detail")).toHaveCSS("opacity", "0");
-  await page.mouse.move(0, 0);
-  await main.focus();
-  await expect(main.locator(".hover-detail")).toHaveCSS("opacity", "1");
-  await main.press("Enter");
+  const cards = page.locator('[data-position="QB"] .stack-card');
+  await expect(cards).toHaveCount(2);
+  await cards.first().focus();
+  await cards.first().press("Enter");
   await expect(page.locator("#dialog-title")).toHaveText("Trason Parlor");
   await expect(page.getByRole("dialog")).toContainText("253");
-  await expect(page.getByRole("dialog")).toContainText("170 lbs");
   await page.keyboard.press("Escape");
-  await expect(main).toBeFocused();
-  await backup.click();
+  await expect(cards.first()).toBeFocused();
+  await cards.nth(1).press("Enter");
   await expect(page.locator("#dialog-title")).toHaveText("Derrick Goodwin");
   await page.getByRole("button", { name: "Close player details" }).click();
-  await page.getByRole("button", { name: "Defense", exact: true }).click();
-  await expect(page.locator('[data-unit="offense"]:visible')).toHaveCount(0);
-  await page
-    .getByRole("button", { name: "Special teams", exact: true })
-    .click();
-  await expect(page.locator('[data-position="K"] [data-id]')).toHaveCount(3);
-  await expect(page.locator('[data-position="P"] [data-id]')).toHaveCount(2);
+  await expect(cards.nth(1)).toBeFocused();
 });
-test("touch backup profile, reduced motion and screenshots", async ({
-  browser,
-}) => {
+test("touch exposes every backup strip", async ({ browser }) => {
   const context = await browser.newContext({
     hasTouch: true,
+    isMobile: true,
     viewport: { width: 390, height: 844 },
-    baseURL: "http://127.0.0.1:8779",
   });
   const page = await context.newPage();
-  await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.goto("/roster.html");
-  await page.locator('[data-position="QB"] .roster-option').tap();
-  await expect(page.locator("#dialog-title")).toHaveText("Derrick Goodwin");
-  await page.getByRole("button", { name: "Close player details" }).tap();
-  for (const width of [390, 1440]) {
-    await page.setViewportSize({ width, height: 1000 });
-    for (const route of ["index", "roster"]) {
-      await page.goto(`/${route}.html`);
-      await page.screenshot({
-        path: `.preview/current-${route}-${width}.png`,
-        fullPage: true,
-      });
+  await page.goto("http://127.0.0.1:8779/roster.html");
+  for (const unit of ["offense", "defense", "special"]) {
+    await page.locator(`[data-group="${unit}"]`).tap();
+    for (const card of await page
+      .locator(`.unit-formation[data-unit="${unit}"] .stack-backup`)
+      .all()) {
+      const expectedName = (await card.getAttribute("aria-label")).match(
+        /^View (.*), number /,
+      )[1];
+      const box = await card.boundingBox();
+      await page.touchscreen.tap(
+        box.x + box.width / 2,
+        box.y + box.height - 10,
+      );
+      await expect(page.getByRole("dialog")).toBeVisible();
+      await expect(page.locator("#dialog-title")).toHaveText(expectedName);
+      await page.getByRole("button", { name: "Close player details" }).tap();
     }
   }
   await context.close();
 });
-test("no JavaScript retains full roster and statistics", async ({
-  browser,
-}) => {
-  const context = await browser.newContext({
-    javaScriptEnabled: false,
-    viewport: { width: 720, height: 1000 },
-  });
+test("no JavaScript retains 42 complete profiles", async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   await page.goto("http://127.0.0.1:8779/roster.html");
   await expect(page.locator("#roster-fallback")).toBeVisible();
@@ -110,33 +141,29 @@ test("no JavaScript retains full roster and statistics", async ({
     .first()
     .click();
   await expect(page.locator(".roster-directory")).toContainText("253");
-  expect(
-    await page.evaluate(
-      () => document.documentElement.scrollWidth <= innerWidth,
-    ),
-  ).toBe(true);
   await context.close();
 });
-
-test("compact previews remain hoverable outside their buttons", async ({
+test("preview is hoverable outside stack, unclipped and dismissible", async ({
   page,
 }) => {
+  await page.setViewportSize({ width: 1366, height: 768 });
   await page.goto("/roster.html");
-  const option = page.locator('[data-position="QB"] .roster-option');
-  await option.scrollIntoViewIfNeeded();
-  await option.hover();
-  const preview = option.locator(".hover-detail");
-  await expect(preview).toHaveCSS("opacity", "1");
-  const cardBox = await option.boundingBox();
-  const box = await preview.boundingBox();
-  expect(box.y).toBeLessThan(cardBox.y);
-  await page.mouse.move(
-    box.x + box.width / 2,
-    Math.max(box.y + 4, cardBox.y - 4),
-  );
-  await expect(preview).toHaveCSS("opacity", "1");
-  await expect(preview).toHaveCSS("pointer-events", "auto");
+  const card = page.locator('[data-position="QB"] .stack-backup');
+  const box = await card.boundingBox();
+  await page.mouse.move(box.x + box.width / 2, box.y + box.height - 10);
+  const preview = page.locator("#player-preview");
+  await expect(preview).toBeVisible();
+  await preview.hover();
+  await page.waitForTimeout(250);
+  await expect(preview).toBeVisible();
+  const rect = await preview.boundingBox();
+  expect(rect.x).toBeGreaterThanOrEqual(0);
+  expect(rect.x + rect.width).toBeLessThanOrEqual(1366);
+  expect(rect.y + rect.height).toBeLessThanOrEqual(768);
   await page.keyboard.press("Escape");
-  await expect(preview).toHaveCSS("opacity", "0");
-  await expect(preview).toHaveCSS("pointer-events", "none");
+  await expect(preview).toBeHidden();
+  await page.mouse.move(0, 0);
+  await page.mouse.move(box.x + box.width / 2, box.y + box.height - 10);
+  await page.getByRole("button", { name: "Dismiss player preview" }).click();
+  await expect(preview).toBeHidden();
 });

@@ -2,6 +2,108 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile, stat, readdir } from "node:fs/promises";
 const pages = ["index", "roster"];
+test("exact two-row formations and presentation-only aliases", async () => {
+  const html = await readFile("dist/roster.html", "utf8");
+  const data = JSON.parse(await readFile("src/data.json"));
+  const expected = {
+    offense: [
+      ["OT", "OG", "C", "OG", "OT", "TE"],
+      ["WR", "HB", "QB", "FB", "WR"],
+    ],
+    defense: [
+      ["S", "OLB", "ILB", "ILB", "OLB", "S"],
+      ["CB", "DE", "DT", "DE", "CB"],
+    ],
+  };
+  const aliases = { OL: "OT", RB: "HB", NG: "DT", DB: "CB", MLB: "ILB" };
+  for (const [unit, rows] of Object.entries(expected)) {
+    const block = html.match(
+      new RegExp(
+        `<div class="unit-formation" data-unit="${unit}">([\\s\\S]*?)<!-- /unit -->`,
+      ),
+    )?.[1];
+    assert.ok(block, `${unit} formation exists`);
+    const renderedRows = [
+      ...block.matchAll(/<div class="formation-row">([\s\S]*?)<!-- \/row -->/g),
+    ];
+    assert.deepEqual(
+      renderedRows.map((r) =>
+        [...r[1].matchAll(/data-position="([^"]+)"/g)].map((m) => m[1]),
+      ),
+      rows,
+    );
+    for (const code of new Set(rows.flat())) {
+      const groups = [
+        ...block.matchAll(
+          /<section class="position-group" data-position="([^"]+)">([\s\S]*?)<\/section>/g,
+        ),
+      ].filter((m) => m[1] === code);
+      const pools = groups.map((g) =>
+        [...g[2].matchAll(/data-id="([^"]+)"/g)].map((m) => m[1]),
+      );
+      const ids = pools.flat();
+      const expectedIds = data.players
+        .filter((p) =>
+          p.positions.some((pos) => (aliases[pos] || pos) === code),
+        )
+        .sort(
+          (a, b) =>
+            Number(a.number) - Number(b.number) || a.id.localeCompare(b.id),
+        )
+        .map((p) => p.id);
+      pools.forEach((pool, index) =>
+        assert.deepEqual(
+          pool,
+          expectedIds.filter((_, i) => i % pools.length === index),
+        ),
+      );
+      assert.deepEqual(
+        [...ids].sort(),
+        expectedIds.sort(),
+        `${unit} ${code} covers pool once`,
+      );
+      assert.ok(
+        Math.max(...pools.map((p) => p.length)) -
+          Math.min(...pools.map((p) => p.length)) <=
+          1,
+      );
+    }
+  }
+  assert.equal((html.match(/<template id="detail-/g) || []).length, 42);
+  assert.doesNotMatch(html, /data-position="(?:OL|NG|DB|RB)"/);
+});
+test("complete chronological schedule and supplied media", async () => {
+  const html = await readFile("dist/index.html", "utf8");
+  const data = JSON.parse(await readFile("src/data.json"));
+  assert.equal(data.schedule?.length, 10);
+  const rows = [
+    ...html.matchAll(
+      /<a class="result-row" data-status="([^"]+)"[\s\S]*?<\/a>/g,
+    ),
+  ];
+  assert.equal(rows.length, 10);
+  assert.equal(rows.filter((r) => r[1] === "final").length, 2);
+  assert.equal(rows.filter((r) => r[1] === "scheduled").length, 8);
+  for (const row of rows.filter((r) => r[1] === "scheduled")) {
+    const date = row[0].match(/datetime="([^"]+)"/)[1];
+    assert.ok(row[0].includes(data.schedule.find((g) => g.date === date).time));
+    assert.match(row[0], /Scheduled/);
+    assert.doesNotMatch(row[0], /class="schedule-score"/);
+  }
+  assert.deepEqual(
+    rows.map((r) => r[0].match(/datetime="([^"]+)"/)[1]),
+    data.schedule.map((g) => g.date).sort(),
+  );
+  for (const name of [
+    "field.webp",
+    "uniform-away.webp",
+    "uniform-home.webp",
+    "buckaroo-logo.png",
+  ])
+    assert.ok(html.includes(`assets/${name}`));
+  assert.doesNotMatch(html, /assets\/(stadium|favicon|jersey)\.svg|brand-mark/);
+  assert.match(html, /not independently verified/i);
+});
 for (const page of pages)
   test(`${page}: resources and two-page navigation`, async () => {
     const html = await readFile(`dist/${page}.html`, "utf8");

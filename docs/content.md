@@ -9,10 +9,20 @@ The website is an unofficial portfolio concept, not an official depth chart. It 
 
 ## Photos and depth ordering
 
-Live roster has no portraits. Profiles checked (Trason Parlor, Carter Walker, Connor Knight) supplied no player portrait. The listed MaxPreps gallery is from2022, not current. Do not harvest old or unidentifiable images. Labeled jersey illustrations remain temporarily; photo provision/approval is pending. Current, player-labeled photos with reuse permission are still needed.
+Live roster has no portraits. Profiles checked (Trason Parlor, Carter Walker, Connor Knight) supplied no player portrait. The listed MaxPreps gallery is from2022, not current. Do not harvest old or unidentifiable images. Caleb supplied two promotional uniform references for homepage use. This is not a complete player-portrait set. Do not assign Trason’s likeness or the unidentified black-uniform player to otherplayers.
 
-MaxPreps lists positions, not starter/backup ranks. Every listed option appears in its applicable position group, ordered by jersey number. The first displayed player is not asserted to be a starter. No left/right tackle split or depth ranking is invented.
+MaxPreps lists positions, not starter/backup ranks. Display pools are remapped at Caleb’s request: OL->OT, RB->HB, NG->DT, DB->CB. Raw positions remain unchanged in profiles. Repeated slots split pools deterministically by jersey number and are not a published left/right assignment or depth ranking. Every source player remains available.
 
 ## Rights and artwork
 
-Caleb previously reported MaxPreps permission for2026 data acquisition; this does not establish photo licensing or commercial redistribution rights. Site remains an unofficial personal/LAN portfolio concept. No MaxPreps editorial text, gallery photos, or logos copied. Original stadium/jersey illustrations are now neutral grayscale; Oswald uses the included SIL Open Font License.
+Caleb previously reported MaxPreps permission for2026 data acquisition; this does not establish photo licensing or commercial redistribution rights. Site remains an unofficial personal/LAN portfolio concept. No MaxPreps editorial text, gallery photos, or logos copied. The homepage now uses supplied photo crops and the real district mark; no invented B-star logo appears. Oswald uses the included SIL Open Font License.
+
+
+## Supplied media and full schedule revision
+
+- Schedule: all10 rows from the verified MaxPreps2026 schedule acquisition now appear on Home:2 completed,8 upcoming. Retain provider dates, local kickoff text (including Prescott5:00pm), venue and source links. Future scores are null. No live-update automation added.
+- Official logo: https://files.smartsites.parentsquare.com/6590/footer_logo_img_gbpflb.png — found in the footer background of https://smackover.net/ . Original160x160 horse/rider-and-horseshoe artwork retained as `assets/buckaroo-logo.png`; no redraw or removal of symbol parts. Used for identification at Caleb’s request, not a claim of school endorsement or unrestricted trademark license.
+- Field: user attachment `img_328272a71c06.webp`,376x355. Converted to grayscale `field.webp`; no invented field markings or replacement logo. Location not independently verified; describe it as the user-supplied field photograph.
+- White/away uniform: user attachment `img_212cb04519d2.png`,1179x1481. Crop[108,447,829,1210],721x763, then grayscale. Supplied Andy’s/42Sports Trason Parlor spotlight composite. Preserve attribution in caption; not an independent site sponsorship, nor a clean jersey/product photograph.
+- Black/home uniform: user attachment `img_1b7a263e3156.png`,526x701. Crop[287,214,477,505],190x291, then grayscale. Supplied Buckaroos countdown promotional composite; crop avoids presenting the old40days countdown as current. No player identity inferred.
+- WebP derivatives encoded losslessly after grayscale conversion; source dimensions retained rather than claiming upscaling adds resolution. All source assets are served locally.
