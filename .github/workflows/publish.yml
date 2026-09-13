@@ -47,7 +47,7 @@ jobs:
         run: |
           docker run -d --name smoke -p 8780:80 noplexzone/smackover-football:sha-${{ github.sha }}
           for page in index roster schedule program gameday community; do
-            curl --fail --retry 8 --retry-connrefused --retry-delay 1 http://127.0.0.1:8780/$page.html -o /tmp/$page.html
+            curl --fail --retry 8 --retry-all-errors --retry-connrefused --retry-delay 1 http://127.0.0.1:8780/$page.html -o /tmp/$page.html
             cmp dist/$page.html /tmp/$page.html
           done
           test "$(docker inspect smoke --format '{{ index .Config.Labels "org.opencontainers.image.revision" }}')" = "${{ github.sha }}"
